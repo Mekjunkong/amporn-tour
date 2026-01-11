@@ -1,25 +1,38 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import ToursSection from "@/components/ToursSection";
+import IsraeliSection from "@/components/IsraeliSection";
+import AboutSection from "@/components/AboutSection";
+import GallerySection from "@/components/GallerySection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 /**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+ * Home Page - Main landing page for Amporn Tour
+ * 
+ * Design Philosophy: Warm Hospitality with Cultural Bridge
+ * - Warm earth tones (terracotta, sage green) with deep teal accents
+ * - Playfair Display for elegant headings + Poppins for readable body text
+ * - Asymmetric layout with organic wave dividers
+ * - Real photography prioritized; lazy loading for all images
+ * - Multilingual support (English, Thai, Hebrew with RTL)
+ * - Persistent WhatsApp integration
  */
 export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Header />
+      <main className="flex-1">
+        <HeroSection />
+        <ToursSection />
+        <IsraeliSection />
+        <AboutSection />
+        <GallerySection />
+        <ContactSection />
       </main>
+      <Footer />
+      <FloatingWhatsApp />
     </div>
   );
 }
