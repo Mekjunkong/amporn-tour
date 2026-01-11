@@ -1,24 +1,20 @@
-import { useLanguage, type Language } from '@/contexts/LanguageContext';
-import { translations } from '@/lib/translations';
-import { MessageCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
-const WHATSAPP_NUMBER = '66899995677';
-
+/**
+ * Header Component
+ * Sticky header with logo, navigation, and WhatsApp button
+ * English-only version for European market
+ */
 export default function Header() {
-  const { language, setLanguage, isRTL } = useLanguage();
-  const t = translations[language];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const getWhatsAppMessage = () => {
-    return encodeURIComponent(t.whatsapp.message);
-  };
-
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${getWhatsAppMessage()}`;
-
-  const languages: { code: Language; flag: string; label: string }[] = [
-    { code: 'en', flag: '🇬🇧', label: 'English' },
-    { code: 'th', flag: '🇹🇭', label: 'ไทย' },
-    { code: 'he', flag: '🇮🇱', label: 'עברית' },
+  const navItems = [
+    { label: 'Home', href: '#home' },
+    { label: 'Tours', href: '#tours' },
+    { label: 'About', href: '#about' },
+    { label: 'Gallery', href: '#gallery' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -41,62 +37,66 @@ export default function Header() {
 
         {/* Center - Navigation (hidden on mobile) */}
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#home" className="text-sm font-medium hover:text-primary transition-colors">
-            {t.nav.home}
-          </a>
-          <a href="#tours" className="text-sm font-medium hover:text-primary transition-colors">
-            {t.nav.tours}
-          </a>
-          <a href="#about" className="text-sm font-medium hover:text-primary transition-colors">
-            {t.nav.about}
-          </a>
-          <a href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">
-            {t.nav.gallery}
-          </a>
-          <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
-            {t.nav.contact}
-          </a>
+          {navItems.map((item) => (
+            <a
+              key={item.href}
+              href={item.href}
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              {item.label}
+            </a>
+          ))}
         </nav>
 
-        {/* Right - Language Toggle & WhatsApp */}
+        {/* Right - WhatsApp Button & Mobile Menu */}
         <div className="flex items-center gap-4">
-          {/* Language Toggle */}
-          <div className="flex items-center gap-1 bg-muted p-1 rounded-lg">
-            {languages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => setLanguage(lang.code)}
-                className={`px-2 py-1 rounded text-sm font-medium transition-all ${
-                  language === lang.code
-                    ? 'bg-white text-primary shadow-sm'
-                    : 'text-muted-foreground hover:text-foreground'
-                }`}
-                title={lang.label}
-              >
-                {lang.flag}
-              </button>
-            ))}
-          </div>
-
-          {/* WhatsApp Button */}
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-            <Button
-              size="sm"
-              className="bg-green-500 hover:bg-green-600 text-white gap-2 hidden sm:flex"
-            >
-              <MessageCircle className="w-4 h-4" />
-              <span className="hidden md:inline">WhatsApp</span>
-            </Button>
+          <a
+            href="https://wa.me/66899995677?text=Hello%2C%20I%20found%20Amporn%20Tour%20through%20your%20website%20and%20would%20like%20to%20ask%20about%20tours%20in%20Chiang%20Mai."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-colors"
+          >
+            <span>💬</span>
+            <span>WhatsApp</span>
           </a>
 
-          {/* Mobile WhatsApp Icon */}
-          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="sm:hidden">
-            <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white">
-              <MessageCircle className="w-4 h-4" />
-            </Button>
-          </a>
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <div className="md:hidden border-t border-border bg-white">
+          <nav className="container py-4 flex flex-col gap-4">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm font-medium hover:text-primary transition-colors py-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {item.label}
+              </a>
+            ))}
+            <a
+              href="https://wa.me/66899995677?text=Hello%2C%20I%20found%20Amporn%20Tour%20through%20your%20website%20and%20would%20like%20to%20ask%20about%20tours%20in%20Chiang%20Mai."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg font-medium transition-colors mt-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <span>💬</span>
+              <span>Message on WhatsApp</span>
+            </a>
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

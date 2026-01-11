@@ -12,15 +12,15 @@ export interface SEOConfig {
 }
 
 export const defaultSEO: SEOConfig = {
-  title: 'Amporn Tour | Private Tours in Chiang Mai, Northern Thailand',
-  description: 'Private tours in Chiang Mai for Israeli & international travelers. Flexible itineraries, local expertise.',
+  title: 'Amporn Tour | Private Tours in Chiang Mai for European Travelers',
+  description: 'Private tours in Chiang Mai for European travelers. Flexible itineraries, local expertise, excellent value.',
   keywords: [
     'Chiang Mai tours',
     'private tours Chiang Mai',
-    'Israeli friendly tours',
-    'Northern Thailand',
+    'Northern Thailand tours',
     'Doi Inthanon',
-    'temple tours',
+    'temple tours Thailand',
+    'European tours',
   ],
   image: '/images/doi-inthanon-hero.jpg',
 };
@@ -34,7 +34,7 @@ export function generateLocalBusinessSchema() {
     '@type': 'LocalBusiness',
     '@id': 'https://amporn-tour.manus.space',
     name: 'Amporn Tour',
-    description: 'Professional private tours in Northern Thailand',
+    description: 'Professional private tours in Northern Thailand for European travelers',
     url: 'https://amporn-tour.manus.space',
     telephone: '+66899995677',
     image: '/images/amporn-logo.png',
@@ -93,7 +93,7 @@ export function generateTourServiceSchema() {
       '@type': 'City',
       name: 'Chiang Mai',
     },
-    description: 'Flexible, personalized private and small-group tours in Northern Thailand',
+    description: 'Flexible, personalized private tours in Northern Thailand for European travelers',
     offers: {
       '@type': 'AggregateOffer',
       priceCurrency: 'THB',
@@ -112,7 +112,7 @@ export function generateOrganizationSchema() {
     name: 'Amporn Tour',
     url: 'https://amporn-tour.manus.space',
     logo: '/images/amporn-logo.png',
-    description: 'Professional private tours in Northern Thailand for international travelers',
+    description: 'Professional private tours in Northern Thailand for European travelers',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',
@@ -140,18 +140,18 @@ export function generateFAQSchema() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'Do you offer tours for Israeli travelers?',
+        name: 'Do you offer private tours for groups?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, we have extensive experience working with Israeli travelers and understand your travel preferences. We offer flexible tours tailored to your needs.',
+          text: 'Yes, we specialize in private and small-group tours customized to your interests and preferences.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Can you accommodate Shabbat schedules?',
+        name: 'Can you customize tours to my interests?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We can arrange tours that respect Shabbat schedules. Please discuss your specific needs when booking via WhatsApp.',
+          text: 'Absolutely! We create flexible itineraries tailored to your specific interests, pace, and preferences.',
         },
       },
       {
