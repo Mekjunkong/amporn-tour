@@ -7,6 +7,7 @@ import GallerySection from "@/components/GallerySection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
+import SEOHead from "@/components/SEOHead";
 
 /**
  * Home Page - Main landing page for Amporn Tour
@@ -22,6 +23,7 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col bg-white">
+      <SEOHead />
       <Header />
       <main className="flex-1">
         <HeroSection />

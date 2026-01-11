@@ -25,11 +25,19 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <div className="text-2xl font-bold text-primary font-display">
-            Amporn Tour
+        <a href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+          <img
+            src="/images/amporn-logo.png"
+            alt="Amporn Tour Logo"
+            className="w-10 h-10 md:w-12 md:h-12"
+          />
+          <div className="hidden sm:block">
+            <div className="text-lg md:text-xl font-bold text-slate-900 font-display">
+              Amporn Tour
+            </div>
+            <div className="text-xs text-slate-600">Northern Thailand</div>
           </div>
-        </div>
+        </a>
 
         {/* Center - Navigation (hidden on mobile) */}
         <nav className="hidden md:flex items-center gap-8">
