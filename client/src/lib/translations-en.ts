@@ -49,25 +49,12 @@ export const translations = {
     },
     detailsAvailable: 'Details available upon request via WhatsApp',
   },
-  // European Travelers Section
-  european: {
-    title: 'For European Travelers',
-    subtitle: 'We welcome guests from across Europe and understand your travel expectations',
-    comfort: 'Comfort & Safety',
-    comfortDesc: 'We prioritize your comfort and safety with professional guides, reliable transportation, and well-planned itineraries.',
-    flexibility: 'Flexible Scheduling',
-    flexibilityDesc: 'We accommodate your schedule and preferences, whether you prefer early starts, leisurely mornings, or specific activity times.',
-    expertise: 'Local Knowledge',
-    expertiseDesc: 'Our guides have deep knowledge of Northern Thailand and can take you beyond typical tourist routes to authentic experiences.',
-    value: 'Excellent Value',
-    valueDesc: 'Enjoy premium tour experiences at competitive prices compared to European tour operators.',
-  },
+
   // About Section
   about: {
     title: 'About Amporn Tour',
     intro: 'Welcome to Amporn Tour, your trusted guide to Northern Thailand.',
-    story: 'With deep local knowledge and a passion for hospitality, Amporn Tour specializes in creating memorable, personalized travel experiences. We work with travelers from across Europe and the world to ensure every tour is tailored to your interests and comfort.',
-    expertise: 'Local Expertise',
+    story: 'With deep local knowledge and a passion for hospitality, Amporn Tour specializes in creating memorable, personalized travel experiences. We work with travelers from around the world to ensure every tour is tailored to your interests and comfort.',ise: 'Local Expertise',
     expertiseDesc: 'Born and raised in Chiang Mai, we know every corner of the region and can take you beyond typical tourist routes.',
     reliability: 'Reliability & Safety',
     reliabilityDesc: 'Your safety and satisfaction are our top priorities. We maintain high standards and communicate clearly at every step.',
