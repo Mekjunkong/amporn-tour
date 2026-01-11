@@ -33,7 +33,7 @@ export const tours: Tour[] = [
     title: 'Doi Inthanon National Park - Trek Pha Dok Siew',
     description: 'Experience the highest spot in Thailand with stunning mountain views, ancient temples, and nature trails. Visit the King\'s and Queen\'s Pagodas, explore local Hmong markets, and trek through the beautiful Pha Dok Siew nature trail.',
     shortDescription: 'Trek through Thailand\'s highest mountain with temple visits and waterfall exploration',
-    heroImage: '/images/IMG-20260111-WA0000.jpg',
+    heroImage: '/images/tour-doi-inthanon-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0000.jpg', alt: 'Doi Inthanon mountain landscape' },
       { src: '/images/IMG-20260111-WA0001.jpg', alt: 'Doi Inthanon National Park sunset' },
@@ -73,7 +73,7 @@ export const tours: Tour[] = [
     title: 'One Day Trek & Elephant Care',
     description: 'Spend a day with rescued elephants in their natural habitat. Trek through lush forests, interact with elephants, enjoy bamboo rafting, and visit beautiful waterfalls. An ethical and memorable experience with proper animal care.',
     shortDescription: 'Trek and interact with elephants, bamboo rafting, and waterfall exploration',
-    heroImage: '/images/IMG-20260111-WA0003.jpg',
+    heroImage: '/images/tour-elephant-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0003.jpg', alt: 'Elephant care experience' },
     ],
@@ -110,7 +110,7 @@ export const tours: Tour[] = [
     title: 'Doi Suthep Temple & Hmong Village',
     description: 'Visit the most famous temple in Northern Thailand perched on a mountain. Explore the sacred Doi Suthep temple with 306 steps flanked by mythical Nagas, enjoy panoramic city views, and visit authentic Hmong villages with local crafts.',
     shortDescription: 'Visit iconic Doi Suthep temple and explore authentic Hmong mountain villages',
-    heroImage: '/images/IMG-20260111-WA0005.jpg',
+    heroImage: '/images/tour-doi-suthep-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0005.jpg', alt: 'Doi Suthep Temple' },
     ],
@@ -149,7 +149,7 @@ export const tours: Tour[] = [
     title: 'Chiang Rai One Day & Golden Triangle',
     description: 'Explore Chiang Rai\'s most iconic temples including the stunning White Temple and Blue Temple. Visit the famous Golden Triangle where Thailand, Laos, and Myanmar meet. Experience hot springs, local culture, and boat trips along the Mae Khong River.',
     shortDescription: 'Explore Chiang Rai temples and the Golden Triangle border region',
-    heroImage: '/images/IMG-20260111-WA0004.jpg',
+    heroImage: '/images/tour-chiang-rai-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0004.jpg', alt: 'Chiang Rai White Temple' },
     ],
@@ -191,7 +191,7 @@ export const tours: Tour[] = [
     title: 'Chiang Rai One Day',
     description: 'Discover the charm of Chiang Rai with its famous temples and cultural sites. Visit the White Temple, Blue Temple, Black Museum, and hot springs. Experience local culture and enjoy optional visits to Karen Long Neck Village.',
     shortDescription: 'Full day exploration of Chiang Rai\'s temples and cultural attractions',
-    heroImage: '/images/IMG-20260111-WA0002.jpg',
+    heroImage: '/images/tour-chiang-rai-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0002.jpg', alt: 'Chiang Rai temples' },
     ],
@@ -230,7 +230,7 @@ export const tours: Tour[] = [
     title: 'Doi Inthanon National Park - Trek Kew Mae Pan',
     description: 'Experience the highest mountain in Thailand with the scenic Kew Mae Pan nature trail. Visit the King\'s and Queen\'s Pagodas, explore local markets, and trek through pristine forests with panoramic mountain views. Available November to May.',
     shortDescription: 'Trek the scenic Kew Mae Pan trail on Thailand\'s highest mountain',
-    heroImage: '/images/IMG-20260111-WA0006.jpg',
+    heroImage: '/images/tour-doi-inthanon-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0006.jpg', alt: 'Kew Mae Pan trek' },
     ],
