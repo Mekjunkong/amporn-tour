@@ -3,12 +3,23 @@ import { translations } from '@/lib/translations';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Phone } from 'lucide-react';
 import LazyImage from '@/components/LazyImage';
+import { useState, useEffect } from 'react';
 
 const WHATSAPP_NUMBER = '66899995677';
 
 export default function HeroSection() {
   const { language } = useLanguage();
   const t = translations[language];
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const getWhatsAppMessage = () => {
     return encodeURIComponent(t.whatsapp.message);
@@ -18,13 +29,21 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative h-screen min-h-[500px] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <LazyImage
-          src="/images/doi-inthanon-hero.jpg"
-          alt="Doi Inthanon Mountain"
-          className="w-full h-full object-cover"
-        />
+      {/* Background Image with Parallax Effect */}
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <div
+          style={{
+            transform: `translateY(${scrollY * 0.5}px)`,
+            transition: 'transform 0.1s ease-out',
+          }}
+          className="w-full h-full"
+        >
+          <LazyImage
+            src="/images/doi-inthanon-hero.jpg"
+            alt="Doi Inthanon Mountain"
+            className="w-full h-[120%] object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
