@@ -1,7 +1,8 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mountain, Leaf, Building2, MapPin, Users, Heart } from 'lucide-react';
+import { Mountain, Leaf, Building2, MapPin, Users, Heart, ArrowRight } from 'lucide-react';
+import { Link } from 'wouter';
 
 const tours = [
   {
@@ -75,6 +76,16 @@ export default function ToursSection() {
               </Card>
             );
           })}
+        </div>
+
+        {/* View All Tours CTA */}
+        <div className="text-center mt-12">
+          <Link href="/tours">
+            <a className="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold transition-colors">
+              <span>View All Tours & Details</span>
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </Link>
         </div>
       </div>
     </section>

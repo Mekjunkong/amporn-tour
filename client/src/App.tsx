@@ -5,11 +5,15 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Home from "./pages/Home";
+import Tours from "./pages/Tours";
+import TourDetail from "./pages/TourDetail";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
+      <Route path={"/ "} component={Home} />
+      <Route path={"/tours"} component={Tours} />
+      <Route path={`/tour/:tourId`} component={TourDetail} />
       {/* Final fallback route */}
       <Route component={Home} />
     </Switch>
