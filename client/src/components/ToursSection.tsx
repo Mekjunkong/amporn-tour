@@ -84,9 +84,6 @@ export default function ToursSection() {
                   <CardDescription className="text-base text-slate-600">
                     {tourData.description}
                   </CardDescription>
-                  <p className="text-sm text-primary font-medium mt-4">
-                    {t.tours.detailsAvailable}
-                  </p>
                 </CardContent>
               </Card>
             );

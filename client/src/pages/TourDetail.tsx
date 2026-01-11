@@ -1,4 +1,5 @@
 import { useParams } from 'wouter';
+import { useEffect } from 'react';
 import { getTourById } from '@/lib/tours-data';
 import { Clock, MapPin, Users, Zap, CheckCircle2, Package } from 'lucide-react';
 import LazyImage from '@/components/LazyImage';
@@ -10,6 +11,10 @@ import LazyImage from '@/components/LazyImage';
 export default function TourDetail() {
   const { tourId } = useParams<{ tourId: string }>();
   const tour = tourId ? getTourById(tourId) : null;
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [tourId]);
 
   if (!tour) {
     return (
@@ -28,12 +33,14 @@ export default function TourDetail() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <div className="relative h-96 md:h-[500px] overflow-hidden">
-        <LazyImage
-          src={tour.heroImage}
-          alt={tour.title}
-          className="w-full h-full object-cover"
-        />
+      <div className="relative h-96 md:h-[500px] overflow-hidden bg-slate-200">
+        {tour.heroImage && (
+          <LazyImage
+            src={tour.heroImage}
+            alt={tour.title}
+            className="w-full h-full object-cover"
+          />
+        )}
         <div className="absolute inset-0 bg-black/40 flex items-end">
           <div className="container pb-8">
             <h1 className="text-4xl md:text-5xl font-bold font-display text-white mb-2">
