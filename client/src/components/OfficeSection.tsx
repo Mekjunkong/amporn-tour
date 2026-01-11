@@ -62,7 +62,7 @@ export default function OfficeSection() {
               </div>
 
               <a
-                href="https://maps.google.com/?q=146/5+Ratchiangsaen+Road+Chiang+Mai"
+                href="https://maps.app.goo.gl/2wbPCLXRqcieFkeFA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-6 inline-block px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors font-semibold"
