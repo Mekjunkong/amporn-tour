@@ -1,6 +1,6 @@
 import { useParams } from 'wouter';
 import { getTourById } from '@/lib/tours-data';
-import { Clock, MapPin, Users, Zap, CheckCircle2, Package } from 'lucide-react';
+import { Clock, MapPin, Users, Zap, CheckCircle2, Package, X } from 'lucide-react';
 import LazyImage from '@/components/LazyImage';
 
 /**
@@ -148,6 +148,21 @@ export default function TourDetail() {
                 </div>
               </div>
 
+              {/* Group Discounts */}
+              {tour.groupDiscounts && tour.groupDiscounts.length > 0 && (
+                <div className="mb-8 pb-8 border-b border-border">
+                  <h3 className="font-semibold text-slate-900 mb-4">Group Discounts</h3>
+                  <div className="space-y-2">
+                    {tour.groupDiscounts.map((discount, index) => (
+                      <div key={index} className="flex justify-between items-center p-2 bg-green-50 rounded">
+                        <span className="text-slate-700 text-sm">{discount.minPeople}+ people</span>
+                        <span className="font-semibold text-green-600">{discount.discount}% off</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Package Includes */}
               <div className="mb-8 pb-8 border-b border-border">
                 <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
@@ -163,6 +178,40 @@ export default function TourDetail() {
                   ))}
                 </ul>
               </div>
+
+              {/* Package Excludes */}
+              {tour.packageExcludes && tour.packageExcludes.length > 0 && (
+                <div className="mb-8 pb-8 border-b border-border">
+                  <h3 className="font-semibold text-slate-900 mb-4 flex items-center gap-2">
+                    <X className="w-5 h-5 text-slate-400" />
+                    Not Included
+                  </h3>
+                  <ul className="space-y-2">
+                    {tour.packageExcludes.map((item, index) => (
+                      <li key={index} className="flex items-center gap-2 text-slate-600 text-sm">
+                        <div className="w-1.5 h-1.5 bg-slate-400 rounded-full" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Payment Terms */}
+              {tour.paymentTerms && (
+                <div className="mb-8 pb-8 border-b border-border">
+                  <h3 className="font-semibold text-slate-900 mb-2 text-sm">Payment Terms</h3>
+                  <p className="text-slate-600 text-xs">{tour.paymentTerms}</p>
+                </div>
+              )}
+
+              {/* Cancellation Policy */}
+              {tour.cancellationPolicy && (
+                <div className="mb-8 pb-8 border-b border-border">
+                  <h3 className="font-semibold text-slate-900 mb-2 text-sm">Cancellation Policy</h3>
+                  <p className="text-slate-600 text-xs">{tour.cancellationPolicy}</p>
+                </div>
+              )}
 
               {/* Seasonal Note */}
               {tour.seasonalNote && (

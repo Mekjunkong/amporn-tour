@@ -16,6 +16,7 @@ export interface Tour {
   images: TourImage[];
   activities: string[];
   packageIncludes: string[];
+  packageExcludes?: string[];
   pickupTime: string;
   duration: string;
   groupSize: string;
@@ -23,8 +24,11 @@ export interface Tour {
   highlights: string[];
   itinerary: string;
   pricePerPerson: number;
+  groupDiscounts?: { minPeople: number; discount: number }[];
   currency: string;
   seasonalNote?: string;
+  paymentTerms?: string;
+  cancellationPolicy?: string;
 }
 
 export const tours: Tour[] = [
@@ -66,7 +70,14 @@ export const tours: Tour[] = [
     ],
     itinerary: 'Start early morning pickup from your hotel. Drive to Doi Inthanon National Park, visiting the highest point with stunning views. Explore the King\'s and Queen\'s Pagodas, visit the Hmong Market, and trek through the Pha Dok Siew nature trail. Stop at Wachirathan Waterfall and White Karen Village. Lunch included. Return to hotel by evening.',
     pricePerPerson: 1200,
+    groupDiscounts: [
+      { minPeople: 4, discount: 10 },
+      { minPeople: 8, discount: 15 },
+    ],
     currency: 'THB',
+    packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
+    paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
+    cancellationPolicy: 'Free cancellation up to 7 days before tour. 50% refund for 3-7 days. No refund within 3 days.',
   },
   {
     id: 'one-day-trek-elephant-care',
@@ -103,7 +114,14 @@ export const tours: Tour[] = [
     ],
     itinerary: 'Morning pickup from hotel. Travel to elephant sanctuary for hands-on care experience. Trek through forest for about 1 hour. Visit Mae Wang Waterfall for swimming and relaxation. Enjoy bamboo rafting on the river. Lunch included. Return to hotel by evening.',
     pricePerPerson: 1400,
+    groupDiscounts: [
+      { minPeople: 4, discount: 10 },
+      { minPeople: 8, discount: 15 },
+    ],
     currency: 'THB',
+    packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
+    paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
+    cancellationPolicy: 'Free cancellation up to 7 days before tour. 50% refund for 3-7 days. No refund within 3 days.',
   },
   {
     id: 'doi-suthep-temple-hmong-village',
@@ -184,7 +202,14 @@ export const tours: Tour[] = [
     ],
     itinerary: 'Early morning pickup from hotel. Drive to Chiang Rai (about 3 hours). Visit hot springs, White Temple, Blue Temple, and Black Museum. Lunch included. Afternoon visit to Karen Long Neck Village and Golden Triangle. Boat trip on Mae Khong River. Return to Chiang Mai by evening.',
     pricePerPerson: 1600,
+    groupDiscounts: [
+      { minPeople: 4, discount: 10 },
+      { minPeople: 8, discount: 15 },
+    ],
     currency: 'THB',
+    packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
+    paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
+    cancellationPolicy: 'Free cancellation up to 7 days before tour. 50% refund for 3-7 days. No refund within 3 days.',
   },
   {
     id: 'chiang-rai-one-day',
@@ -223,7 +248,14 @@ export const tours: Tour[] = [
     ],
     itinerary: 'Morning pickup from hotel. Drive to Chiang Rai. Visit hot springs, White Temple, Blue Temple, and Black Museum. Lunch included. Optional visit to Karen Long Neck Village. Return to Chiang Mai by evening.',
     pricePerPerson: 1300,
+    groupDiscounts: [
+      { minPeople: 4, discount: 10 },
+      { minPeople: 8, discount: 15 },
+    ],
     currency: 'THB',
+    packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
+    paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
+    cancellationPolicy: 'Free cancellation up to 7 days before tour. 50% refund for 3-7 days. No refund within 3 days.',
   },
   {
     id: 'doi-inthanon-trek-kew-mae-pan',
