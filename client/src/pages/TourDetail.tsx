@@ -1,5 +1,4 @@
 import { useParams } from 'wouter';
-import { useEffect } from 'react';
 import { getTourById } from '@/lib/tours-data';
 import { Clock, MapPin, Users, Zap, CheckCircle2, Package } from 'lucide-react';
 import LazyImage from '@/components/LazyImage';
@@ -11,10 +10,6 @@ import LazyImage from '@/components/LazyImage';
 export default function TourDetail() {
   const { tourId } = useParams<{ tourId: string }>();
   const tour = tourId ? getTourById(tourId) : null;
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [tourId]);
 
   if (!tour) {
     return (
