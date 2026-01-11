@@ -13,18 +13,14 @@ export interface SEOConfig {
 
 export const defaultSEO: SEOConfig = {
   title: 'Amporn Tour | Private Tours in Chiang Mai, Northern Thailand',
-  description: 'Professional private and small-group tours in Chiang Mai and Northern Thailand. Experienced with Israeli and international travelers. Flexible, personalized itineraries. WhatsApp: +66 89 999 5677',
+  description: 'Private tours in Chiang Mai for Israeli & international travelers. Flexible itineraries, local expertise.',
   keywords: [
     'Chiang Mai tours',
     'private tours Chiang Mai',
-    'Northern Thailand tours',
     'Israeli friendly tours',
-    'Jewish friendly tours Chiang Mai',
-    'Doi Inthanon tours',
-    'Golden Triangle tours',
-    'temple tours Thailand',
-    'adventure tours Chiang Mai',
-    'cultural tours Thailand',
+    'Northern Thailand',
+    'Doi Inthanon',
+    'temple tours',
   ],
   image: '/images/doi-inthanon-hero.jpg',
 };
