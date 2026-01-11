@@ -130,17 +130,10 @@ export default function TestimonialsSection() {
             </p>
 
             {/* Author Info */}
-            <div className="flex items-center gap-4">
-              <img
-                src={current.image}
-                alt={current.name}
-                className="w-16 h-16 rounded-full object-cover"
-              />
-              <div>
-                <p className="font-semibold text-slate-900 text-lg">{current.name}</p>
-                <p className="text-slate-600 text-sm">{current.country}</p>
-                <p className="text-primary text-sm font-medium">{current.tour}</p>
-              </div>
+            <div>
+              <p className="font-semibold text-slate-900 text-lg">{current.name}</p>
+              <p className="text-slate-600 text-sm">{current.country}</p>
+              <p className="text-primary text-sm font-medium">{current.tour}</p>
             </div>
           </div>
 
