@@ -30,10 +30,10 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="container relative z-10 text-center text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 font-display drop-shadow-lg">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 drop-shadow-2xl" style={{fontFamily: '\"Playfair Display\", serif', letterSpacing: '-1px', textShadow: '2px 2px 8px rgba(0,0,0,0.5)'}}>
           {t.hero.headline}
         </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-md text-slate-100">
+        <p className="text-lg md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-lg text-slate-50 font-light" style={{fontFamily: '\"Poppins\", sans-serif', letterSpacing: '0.5px'}}>
           {t.hero.subheadline}
         </p>
 

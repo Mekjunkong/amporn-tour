@@ -21,17 +21,17 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+        <a href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity group">
           <img
-            src="/images/amporn-logo.png"
+            src="/images/amporn-logo-new.png"
             alt="Amporn Tour Logo"
-            className="w-10 h-10 md:w-12 md:h-12"
+            className="w-12 h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform duration-300"
           />
           <div className="hidden sm:block">
-            <div className="text-lg md:text-xl font-bold text-slate-900 font-display">
+            <div className="text-xl md:text-2xl font-bold bg-gradient-to-r from-amber-800 to-teal-700 bg-clip-text text-transparent" style={{fontFamily: '\"Georgia\", serif', fontWeight: '700', letterSpacing: '-0.5px'}}>
               Amporn Tour
             </div>
-            <div className="text-xs text-slate-600">Northern Thailand</div>
+            <div className="text-xs text-slate-600 font-medium tracking-wide">Northern Thailand Adventures</div>
           </div>
         </a>
 
