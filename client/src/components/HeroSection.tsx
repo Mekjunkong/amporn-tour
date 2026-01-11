@@ -11,6 +11,7 @@ export default function HeroSection() {
   const { language } = useLanguage();
   const t = translations[language];
   const [scrollY, setScrollY] = useState(0);
+  const [useVideo] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,21 +30,39 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative h-screen min-h-[500px] flex items-center justify-center overflow-hidden">
-      {/* Background Image with Parallax Effect */}
+      {/* Background with Parallax Effect */}
       <div className="absolute inset-0 z-0 overflow-hidden">
-        <div
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-            transition: 'transform 0.1s ease-out',
-          }}
-          className="w-full h-full"
-        >
-          <LazyImage
-            src="/images/doi-inthanon-hero.jpg"
-            alt="Doi Inthanon Mountain"
-            className="w-full h-[120%] object-cover"
-          />
-        </div>
+        {useVideo ? (
+          <>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover"
+              style={{
+                transform: `translateY(${scrollY * 0.3}px)`,
+              }}
+            >
+              <source src="/videos/hero-background.mp4" type="video/mp4" />
+              <source src="/videos/hero-background.webm" type="video/webm" />
+            </video>
+          </>
+        ) : (
+          <div
+            style={{
+              transform: `translateY(${scrollY * 0.5}px)`,
+              transition: 'transform 0.1s ease-out',
+            }}
+            className="w-full h-full"
+          >
+            <LazyImage
+              src="/images/doi-inthanon-hero.jpg"
+              alt="Doi Inthanon Mountain"
+              className="w-full h-[120%] object-cover"
+            />
+          </div>
+        )}
         <div className="absolute inset-0 bg-black/40" />
       </div>
 

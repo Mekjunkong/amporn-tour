@@ -3,6 +3,7 @@ import { translations } from '@/lib/translations';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Compass, Shield, Zap } from 'lucide-react';
 import LazyImage from '@/components/LazyImage';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const features = [
   {
@@ -22,9 +23,10 @@ const features = [
 export default function AboutSection() {
   const { language } = useLanguage();
   const t = translations[language];
+  const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation();
 
   return (
-    <section id="about" className="py-16 md:py-24 bg-slate-50">
+    <section ref={sectionRef} id="about" className={`py-16 md:py-24 bg-slate-50 transition-all duration-1000 ${sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -55,12 +57,12 @@ export default function AboutSection() {
 
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {features.map((feature) => {
+          {features.map((feature, index) => {
             const Icon = feature.icon;
             const featureData = (t.about as any)[feature.key];
 
             return (
-              <Card key={feature.key} className="border-slate-200">
+              <Card key={feature.key} className={`border-slate-200 transition-all duration-300 ${sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`} style={{transitionDelay: sectionVisible ? `${index * 100}ms` : '0ms'}}>
                 <CardHeader>
                   <div className="flex items-start gap-4">
                     <Icon className="w-8 h-8 text-primary flex-shrink-0" />

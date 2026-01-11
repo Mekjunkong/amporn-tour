@@ -3,6 +3,7 @@ import { translations } from '@/lib/translations';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Mountain, Leaf, Building2, MapPin, Users, Heart, ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
+import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const tours = [
   {
@@ -34,9 +35,16 @@ const tours = [
 export default function ToursSection() {
   const { language } = useLanguage();
   const t = translations[language];
+  const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation();
 
   return (
-    <section id="tours" className="py-16 md:py-24 bg-slate-50">
+    <section
+      ref={sectionRef}
+      id="tours"
+      className={`py-16 md:py-24 bg-slate-50 transition-all duration-1000 ${
+        sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -50,14 +58,21 @@ export default function ToursSection() {
 
         {/* Tours Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {tours.map((tour) => {
+          {tours.map((tour, index) => {
             const Icon = tour.icon;
             const tourData = (t.tours as any)[tour.key];
 
             return (
               <Card
                 key={tour.key}
-                className="hover:shadow-lg transition-shadow duration-300 border-slate-200"
+                className={`hover:shadow-lg transition-all duration-300 border-slate-200 ${
+                  sectionVisible
+                    ? 'opacity-100 translate-y-0'
+                    : 'opacity-0 translate-y-10'
+                }`}
+                style={{
+                  transitionDelay: sectionVisible ? `${index * 80}ms` : '0ms',
+                }}
               >
                 <CardHeader>
                   <div className="flex items-start justify-between mb-2">
