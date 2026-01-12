@@ -36,7 +36,7 @@ export const tours: Tour[] = [
     title: 'Doi Inthanon National Park - Trek Pha Dok Siew',
     description: 'Experience the highest spot in Thailand with stunning mountain views, ancient temples, and nature trails. Visit the King\'s and Queen\'s Pagodas, explore local Hmong markets, and trek through the beautiful Pha Dok Siew nature trail.',
     shortDescription: 'Trek through Thailand\'s highest mountain with temple visits and waterfall exploration',
-    heroImage: '/images/tour-doi-inthanon-banner.jpg',
+    heroImage: '/images/tour-pha-dok-siew-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0000.jpg', alt: 'Doi Inthanon mountain landscape' },
       { src: '/images/IMG-20260111-WA0001.jpg', alt: 'Doi Inthanon National Park sunset' },
@@ -242,7 +242,7 @@ export const tours: Tour[] = [
     title: 'Doi Inthanon National Park - Trek Kew Mae Pan',
     description: 'Experience the highest mountain in Thailand with the scenic Kew Mae Pan nature trail. Visit the King\'s and Queen\'s Pagodas, explore local markets, and trek through pristine forests with panoramic mountain views. Available November to May.',
     shortDescription: 'Trek the scenic Kew Mae Pan trail on Thailand\'s highest mountain',
-    heroImage: '/images/tour-doi-inthanon-banner.jpg',
+    heroImage: '/images/tour-kew-mae-pan-banner.jpg',
     images: [
       { src: '/images/IMG-20260111-WA0006.jpg', alt: 'Kew Mae Pan trek' },
     ],
