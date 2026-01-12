@@ -38,8 +38,10 @@ export const tours: Tour[] = [
     shortDescription: 'Trek through Thailand\'s highest mountain with temple visits and waterfall exploration',
     heroImage: '/images/tour-pha-dok-siew-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0000.jpg', alt: 'Doi Inthanon mountain landscape' },
-      { src: '/images/IMG-20260111-WA0001.jpg', alt: 'Doi Inthanon National Park sunset' },
+      { src: '/images/tour-pha-dok-siew-gallery-1.jpg', alt: 'Pha Dok Siew waterfall' },
+      { src: '/images/tour-pha-dok-siew-gallery-2.jpg', alt: 'Hiking trail through forest' },
+      { src: '/images/tour-pha-dok-siew-gallery-3.jpg', alt: 'Mountain peak panoramic view' },
+      { src: '/images/tour-pha-dok-siew-gallery-4.jpg', alt: 'Hmong village market' },
     ],
     activities: [
       'The Highest Spot in Thailand',
@@ -81,7 +83,10 @@ export const tours: Tour[] = [
     shortDescription: 'Trek and interact with elephants, bamboo rafting, and waterfall exploration',
     heroImage: '/images/tour-elephant-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0003.jpg', alt: 'Elephant care experience' },
+      { src: '/images/tour-elephant-gallery-1.jpg', alt: 'Elephant in natural habitat' },
+      { src: '/images/tour-elephant-gallery-2.jpg', alt: 'Bamboo rafting on river' },
+      { src: '/images/tour-elephant-gallery-3.jpg', alt: 'Mae Wang waterfall' },
+      { src: '/images/tour-elephant-gallery-4.jpg', alt: 'Elephant sanctuary experience' },
     ],
     activities: [
       'Elephant Care',
@@ -121,7 +126,10 @@ export const tours: Tour[] = [
     shortDescription: 'Visit iconic Doi Suthep temple and explore authentic Hmong mountain villages',
     heroImage: '/images/tour-doi-suthep-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0005.jpg', alt: 'Doi Suthep Temple' },
+      { src: '/images/tour-doi-suthep-gallery-1.jpg', alt: 'Doi Suthep temple at sunset' },
+      { src: '/images/tour-doi-suthep-gallery-2.jpg', alt: 'Naga serpent staircase' },
+      { src: '/images/tour-doi-suthep-gallery-3.jpg', alt: 'Chiang Mai city view' },
+      { src: '/images/tour-doi-suthep-gallery-4.jpg', alt: 'Hmong village market' },
     ],
     activities: [
       'Doi Suthep Temple',
@@ -158,7 +166,10 @@ export const tours: Tour[] = [
     shortDescription: 'Explore Chiang Rai temples and the Golden Triangle border region',
     heroImage: '/images/tour-chiang-rai-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0004.jpg', alt: 'Chiang Rai White Temple' },
+      { src: '/images/tour-chiang-rai-golden-gallery-1.jpg', alt: 'White Temple Wat Rong Khun' },
+      { src: '/images/tour-chiang-rai-golden-gallery-2.jpg', alt: 'Blue Temple interior' },
+      { src: '/images/tour-chiang-rai-golden-gallery-3.jpg', alt: 'Golden Triangle viewpoint' },
+      { src: '/images/tour-chiang-rai-golden-gallery-4.jpg', alt: 'Mae Khong river boat trip' },
     ],
     activities: [
       'Hot Spring',
@@ -203,7 +214,10 @@ export const tours: Tour[] = [
     shortDescription: 'Full day exploration of Chiang Rai\'s temples and cultural attractions',
     heroImage: '/images/tour-chiang-rai-one-day-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0004.jpg', alt: 'Chiang Rai White Temple' },
+      { src: '/images/tour-chiang-rai-one-day-gallery-1.jpg', alt: 'White Temple detail' },
+      { src: '/images/tour-chiang-rai-one-day-gallery-2.jpg', alt: 'Hot springs relaxation' },
+      { src: '/images/tour-chiang-rai-one-day-gallery-3.jpg', alt: 'Black Museum architecture' },
+      { src: '/images/tour-chiang-rai-one-day-gallery-4.jpg', alt: 'Blue Temple interior' },
     ],
     activities: [
       'Hot Spring',
@@ -244,7 +258,10 @@ export const tours: Tour[] = [
     shortDescription: 'Trek the scenic Kew Mae Pan trail on Thailand\'s highest mountain',
     heroImage: '/images/tour-kew-mae-pan-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0006.jpg', alt: 'Kew Mae Pan trek' },
+      { src: '/images/tour-kew-mae-pan-gallery-1.jpg', alt: 'Kew Mae Pan nature trail' },
+      { src: '/images/tour-kew-mae-pan-gallery-2.jpg', alt: 'Mountain ridge hiking' },
+      { src: '/images/tour-kew-mae-pan-gallery-3.jpg', alt: 'Forest canopy with mist' },
+      { src: '/images/tour-kew-mae-pan-gallery-4.jpg', alt: 'King\'s and Queen\'s Pagodas' },
     ],
     activities: [
       'The Highest Spot in Thailand',
@@ -286,8 +303,10 @@ export const tours: Tour[] = [
     shortDescription: 'Full day at Thailand\'s highest mountain with temples and local villages',
     heroImage: '/images/tour-doi-inthanon-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0000.jpg', alt: 'Doi Inthanon mountain landscape' },
-      { src: '/images/IMG-20260111-WA0001.jpg', alt: 'Doi Inthanon National Park' },
+      { src: '/images/tour-doi-inthanon-park-gallery-1.jpg', alt: 'Wachirathan waterfall' },
+      { src: '/images/tour-doi-inthanon-park-gallery-2.jpg', alt: 'Mountain landscape' },
+      { src: '/images/tour-doi-inthanon-park-gallery-3.jpg', alt: 'White Karen village' },
+      { src: '/images/tour-doi-inthanon-park-gallery-4.jpg', alt: 'King\'s Pagoda' },
     ],
     activities: [
       'The Highest Spot in Thailand',

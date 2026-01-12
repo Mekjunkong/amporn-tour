@@ -86,6 +86,9 @@ export default function Footer() {
           <p className="text-center text-sm text-slate-400">
             {t.footer.copyright}
           </p>
+          <p className="text-center text-xs text-slate-500 mt-4">
+            Powered by <a href="https://mikewebstudio.com" target="_blank" rel="noopener noreferrer" className="hover:text-slate-300 transition-colors">mikewebstudio.com</a>
+          </p>
         </div>
       </div>
     </footer>

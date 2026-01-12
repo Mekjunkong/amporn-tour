@@ -3,13 +3,16 @@ import { translations } from '@/lib/translations';
 import LazyImage from '@/components/LazyImage';
 
 const galleryImages = [
-  '/images/Screenshot_2026-01-11-07-43-36-073_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-43-53-500_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-44-11-686_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-44-25-184_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-44-43-818_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-44-56-315_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-45-07-968_com.whatsapp-edit.jpg',
+  '/images/landing-gallery-1.jpg',
+  '/images/landing-gallery-2.jpg',
+  '/images/landing-gallery-3.jpg',
+  '/images/landing-gallery-4.jpg',
+  '/images/landing-gallery-5.jpg',
+  '/images/landing-gallery-6.jpg',
+  '/images/landing-gallery-7.jpg',
+  '/images/landing-gallery-8.jpg',
+  '/images/landing-gallery-9.jpg',
+  '/images/landing-gallery-10.jpg',
 ];
 
 export default function GallerySection() {
