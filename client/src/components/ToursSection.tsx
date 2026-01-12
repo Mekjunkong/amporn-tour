@@ -1,41 +1,10 @@
 import { tours } from '@/lib/tours-data';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Mountain, Leaf, Building2, MapPin, Users, Heart, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
-const tourCategories = [
-  {
-    icon: Building2,
-    title: 'Temple Tours',
-    description: 'Visit sacred temples and spiritual landmarks',
-  },
-  {
-    icon: Mountain,
-    title: 'Mountain Treks',
-    description: 'Explore lush forests and mountain peaks',
-  },
-  {
-    icon: Leaf,
-    title: 'Nature Adventures',
-    description: 'Experience wildlife and natural wonders',
-  },
-  {
-    icon: MapPin,
-    title: 'Day Trips',
-    description: 'Full-day excursions from Chiang Mai',
-  },
-  {
-    icon: Users,
-    title: 'Private Tours',
-    description: 'Customized experiences for your group',
-  },
-  {
-    icon: Heart,
-    title: 'Ethical Experiences',
-    description: 'Responsible tourism and local communities',
-  },
-];
+
 
 export default function ToursSection() {
   const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation();
@@ -94,36 +63,7 @@ export default function ToursSection() {
           ))}
         </div>
 
-        {/* Tour Categories */}
-        <div className="mb-12">
-          <h3 className="text-2xl font-bold font-display text-slate-900 mb-8 text-center">
-            Tour Categories
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {tourCategories.map((category, index) => {
-              const Icon = category.icon;
-              return (
-                <div
-                  key={category.title}
-                  className={`p-6 bg-white rounded-lg border border-slate-200 hover:border-primary hover:shadow-md transition-all duration-300 ${
-                    sectionVisible
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-10'
-                  }`}
-                  style={{
-                    transitionDelay: sectionVisible ? `${(index + 6) * 80}ms` : '0ms',
-                  }}
-                >
-                  <Icon className="w-8 h-8 text-primary mb-4" />
-                  <h4 className="text-lg font-semibold text-slate-900 mb-2">
-                    {category.title}
-                  </h4>
-                  <p className="text-slate-600 text-sm">{category.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
+
 
         {/* View All Tours CTA */}
         <div className="text-center">
