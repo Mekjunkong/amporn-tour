@@ -34,7 +34,7 @@ export default function ToursSection() {
             <Link key={tour.id} href={`/tour/${tour.id}`}>
               <a className="block h-full">
                 <Card
-                  className={`hover:shadow-lg transition-all duration-300 border-slate-200 h-full hover:border-primary cursor-pointer ${
+                  className={`hover:shadow-lg transition-all duration-300 border-slate-200 h-full hover:border-primary cursor-pointer overflow-hidden ${
                     sectionVisible
                       ? 'opacity-100 translate-y-0'
                       : 'opacity-0 translate-y-10'
@@ -43,6 +43,15 @@ export default function ToursSection() {
                     transitionDelay: sectionVisible ? `${index * 80}ms` : '0ms',
                   }}
                 >
+                  {/* Tour Image */}
+                  <div className="w-full h-48 overflow-hidden bg-slate-200">
+                    <img
+                      src={tour.heroImage}
+                      alt={tour.title}
+                      loading="lazy"
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <CardHeader>
                     <CardTitle className="text-xl text-slate-900">{tour.title}</CardTitle>
                   </CardHeader>
