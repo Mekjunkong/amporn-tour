@@ -3,9 +3,6 @@ import { translations } from '@/lib/translations';
 import LazyImage from '@/components/LazyImage';
 
 const galleryImages = [
-  '/images/Screenshot_2026-01-11-07-42-30-377_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-42-49-743_com.whatsapp-edit.jpg',
-  '/images/Screenshot_2026-01-11-07-43-14-461_com.whatsapp-edit.jpg',
   '/images/Screenshot_2026-01-11-07-43-36-073_com.whatsapp-edit.jpg',
   '/images/Screenshot_2026-01-11-07-43-53-500_com.whatsapp-edit.jpg',
   '/images/Screenshot_2026-01-11-07-44-11-686_com.whatsapp-edit.jpg',
