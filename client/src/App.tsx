@@ -8,7 +8,6 @@ import { useScrollToTop } from "./hooks/useScrollToTop";
 import Home from "./pages/Home";
 import Tours from "./pages/Tours";
 import TourDetail from "./pages/TourDetail";
-
 function Router() {
   useScrollToTop();
   return (
