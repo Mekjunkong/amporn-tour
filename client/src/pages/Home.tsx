@@ -5,7 +5,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
 import GallerySection from "@/components/GallerySection";
 import OfficeSection from "@/components/OfficeSection";
-import TrustSignals from "@/components/TrustSignals";
+
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -33,7 +33,6 @@ export default function Home() {
         <TestimonialsSection />
         <AboutSection />
         <GallerySection />
-        <TrustSignals />
         <OfficeSection />
         <ContactSection />
       </main>
