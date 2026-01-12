@@ -24,7 +24,6 @@ export interface Tour {
   highlights: string[];
   itinerary: string;
   pricePerPerson: number;
-  groupDiscounts?: { minPeople: number; discount: number }[];
   currency: string;
   seasonalNote?: string;
   paymentTerms?: string;
@@ -69,11 +68,7 @@ export const tours: Tour[] = [
       'Visit White Karen Village to learn about local traditions',
     ],
     itinerary: 'Start early morning pickup from your hotel. Drive to Doi Inthanon National Park, visiting the highest point with stunning views. Explore the King\'s and Queen\'s Pagodas, visit the Hmong Market, and trek through the Pha Dok Siew nature trail. Stop at Wachirathan Waterfall and White Karen Village. Lunch included. Return to hotel by evening.',
-    pricePerPerson: 1200,
-    groupDiscounts: [
-      { minPeople: 4, discount: 10 },
-      { minPeople: 8, discount: 15 },
-    ],
+    pricePerPerson: 1500,
     currency: 'THB',
     packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
     paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
@@ -113,11 +108,7 @@ export const tours: Tour[] = [
       'Learn about elephant conservation',
     ],
     itinerary: 'Morning pickup from hotel. Travel to elephant sanctuary for hands-on care experience. Trek through forest for about 1 hour. Visit Mae Wang Waterfall for swimming and relaxation. Enjoy bamboo rafting on the river. Lunch included. Return to hotel by evening.',
-    pricePerPerson: 1400,
-    groupDiscounts: [
-      { minPeople: 4, discount: 10 },
-      { minPeople: 8, discount: 15 },
-    ],
+    pricePerPerson: 1800,
     currency: 'THB',
     packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
     paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
@@ -134,7 +125,6 @@ export const tours: Tour[] = [
     ],
     activities: [
       'Doi Suthep Temple',
-      'Bhubing Palace',
       'Hmong Village Market',
       'Local Craft Shops',
       'Panoramic City Views',
@@ -156,9 +146,8 @@ export const tours: Tour[] = [
       'Enjoy spectacular panoramic views of Chiang Mai city',
       'Explore authentic Hmong village culture and crafts',
       'Shop for traditional textiles and handicrafts',
-      'Visit Bhubing Palace gardens',
     ],
-    itinerary: 'Morning pickup from hotel. Drive to Doi Suthep Temple and climb the 306 steps to the golden pagoda. Explore the temple grounds and enjoy city views. Visit Bhubing Palace and gardens. Explore Hmong village markets and craft shops. Lunch included. Return to hotel by evening.',
+    itinerary: 'Morning pickup from hotel. Drive to Doi Suthep Temple and climb the 306 steps to the golden pagoda. Explore the temple grounds and enjoy city views. Explore Hmong village markets and craft shops. Return to hotel by evening.',
     pricePerPerson: 900,
     currency: 'THB',
   },
@@ -201,11 +190,7 @@ export const tours: Tour[] = [
       'Boat trip along the Mae Khong River',
     ],
     itinerary: 'Early morning pickup from hotel. Drive to Chiang Rai (about 3 hours). Visit hot springs, White Temple, Blue Temple, and Black Museum. Lunch included. Afternoon visit to Karen Long Neck Village and Golden Triangle. Boat trip on Mae Khong River. Return to Chiang Mai by evening.',
-    pricePerPerson: 1600,
-    groupDiscounts: [
-      { minPeople: 4, discount: 10 },
-      { minPeople: 8, discount: 15 },
-    ],
+    pricePerPerson: 1700,
     currency: 'THB',
     packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
     paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
@@ -243,15 +228,10 @@ export const tours: Tour[] = [
       'Explore the serene Blue Temple',
       'Experience the quirky Black Museum',
       'Relax in natural hot springs',
-      'Learn about Chiang Rai\'s rich cultural heritage',
       'Optional cultural village visits',
     ],
     itinerary: 'Morning pickup from hotel. Drive to Chiang Rai. Visit hot springs, White Temple, Blue Temple, and Black Museum. Lunch included. Optional visit to Karen Long Neck Village. Return to Chiang Mai by evening.',
     pricePerPerson: 1300,
-    groupDiscounts: [
-      { minPeople: 4, discount: 10 },
-      { minPeople: 8, discount: 15 },
-    ],
     currency: 'THB',
     packageExcludes: ['Personal expenses', 'Drinks and snacks', 'Optional activities'],
     paymentTerms: '50% deposit required to confirm booking, balance due 3 days before tour',
@@ -295,9 +275,48 @@ export const tours: Tour[] = [
       'Enjoy panoramic mountain views',
     ],
     itinerary: 'Early morning pickup from hotel. Drive to Doi Inthanon National Park. Visit the highest point with panoramic views. Trek the Kew Mae Pan nature trail (2 hours). Visit King\'s and Queen\'s Pagodas, Hmong Market, and White Karen Village. Lunch included. Return to hotel by evening.',
-    pricePerPerson: 1200,
+    pricePerPerson: 1500,
     currency: 'THB',
     seasonalNote: 'Available November 1 - May 31',
+  },
+  {
+    id: 'doi-inthanon-national-park',
+    title: 'Doi Inthanon National Park',
+    description: 'Experience Thailand\'s highest mountain with stunning views, sacred temples, and natural beauty. Visit the King\'s and Queen\'s Pagodas, explore Hmong markets, and discover White Karen villages.',
+    shortDescription: 'Full day at Thailand\'s highest mountain with temples and local villages',
+    heroImage: '/images/tour-doi-inthanon-banner.jpg',
+    images: [
+      { src: '/images/IMG-20260111-WA0000.jpg', alt: 'Doi Inthanon mountain landscape' },
+      { src: '/images/IMG-20260111-WA0001.jpg', alt: 'Doi Inthanon National Park' },
+    ],
+    activities: [
+      'The Highest Spot in Thailand',
+      'King\'s and Queen\'s Pagoda',
+      'Hmong Market',
+      'White Karen Village',
+      'Wachirathan Waterfall',
+    ],
+    packageIncludes: [
+      'Transportation',
+      'Tourist Guide',
+      'Entrance Ticket',
+      'Accident Insurance',
+      'Lunch',
+    ],
+    pickupTime: '07:00 - 07:30 AM',
+    duration: '8-9 hours',
+    groupSize: 'Small groups or private',
+    difficulty: 'Easy to Moderate',
+    highlights: [
+      'Visit Thailand\'s highest mountain peak at 2,565 meters',
+      'Explore sacred King\'s and Queen\'s Pagodas',
+      'Experience authentic Hmong culture and markets',
+      'Visit White Karen Village',
+      'See beautiful Wachirathan Waterfall',
+    ],
+    itinerary: 'Morning pickup from hotel. Drive to Doi Inthanon National Park. Visit the highest point with panoramic views. Explore the King\'s and Queen\'s Pagodas, Hmong Market, and White Karen Village. Stop at Wachirathan Waterfall. Lunch included. Return to hotel by evening.',
+    pricePerPerson: 1400,
+    currency: 'THB',
   },
 ];
 

@@ -148,20 +148,7 @@ export default function TourDetail() {
                 </div>
               </div>
 
-              {/* Group Discounts */}
-              {tour.groupDiscounts && tour.groupDiscounts.length > 0 && (
-                <div className="mb-8 pb-8 border-b border-border">
-                  <h3 className="font-semibold text-slate-900 mb-4">Group Discounts</h3>
-                  <div className="space-y-2">
-                    {tour.groupDiscounts.map((discount, index) => (
-                      <div key={index} className="flex justify-between items-center p-2 bg-green-50 rounded">
-                        <span className="text-slate-700 text-sm">{discount.minPeople}+ people</span>
-                        <span className="font-semibold text-green-600">{discount.discount}% off</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
+
 
               {/* Package Includes */}
               <div className="mb-8 pb-8 border-b border-border">
