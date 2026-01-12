@@ -1,18 +1,18 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/lib/translations';
-import LazyImage from '@/components/LazyImage';
+import OptimizedImage from '@/components/OptimizedImage';
 
 const galleryImages = [
-  '/images/landing-gallery-1.jpg',
-  '/images/landing-gallery-2.jpg',
-  '/images/landing-gallery-3.jpg',
-  '/images/landing-gallery-4.jpg',
-  '/images/landing-gallery-5.jpg',
-  '/images/landing-gallery-6.jpg',
-  '/images/landing-gallery-7.jpg',
-  '/images/landing-gallery-8.jpg',
-  '/images/landing-gallery-9.jpg',
-  '/images/landing-gallery-10.jpg',
+  '/images/landing-gallery-1',
+  '/images/landing-gallery-2',
+  '/images/landing-gallery-3',
+  '/images/landing-gallery-4',
+  '/images/landing-gallery-5',
+  '/images/landing-gallery-6',
+  '/images/landing-gallery-7',
+  '/images/landing-gallery-8',
+  '/images/landing-gallery-9',
+  '/images/landing-gallery-10',
 ];
 
 export default function GallerySection() {
@@ -39,7 +39,7 @@ export default function GallerySection() {
               key={index}
               className="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-square"
             >
-              <LazyImage
+              <OptimizedImage
                 src={image}
                 alt={`Gallery image ${index + 1}`}
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"

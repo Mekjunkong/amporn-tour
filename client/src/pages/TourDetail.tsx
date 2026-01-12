@@ -1,7 +1,7 @@
 import { useParams } from 'wouter';
 import { getTourById } from '@/lib/tours-data';
 import { Clock, MapPin, Users, Zap, CheckCircle2, Package, X } from 'lucide-react';
-import LazyImage from '@/components/LazyImage';
+import OptimizedImage from '@/components/OptimizedImage';
 
 /**
  * Tour Detail Page
@@ -30,10 +30,11 @@ export default function TourDetail() {
       {/* Hero Section */}
       <div className="relative h-96 md:h-[500px] overflow-hidden bg-slate-200">
         {tour.heroImage && (
-          <LazyImage
-            src={tour.heroImage}
+          <OptimizedImage
+            src={tour.heroImage.replace(/\.(jpg|jpeg|png|webp)$/i, '')}
             alt={tour.title}
             className="w-full h-full object-cover"
+            priority
           />
         )}
         <div className="absolute inset-0 bg-black/40 flex items-end">
@@ -122,8 +123,8 @@ export default function TourDetail() {
                 <div className="grid md:grid-cols-2 gap-4">
                   {tour.images.map((image, index) => (
                     <div key={index} className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
-                      <LazyImage
-                        src={image.src}
+                      <OptimizedImage
+                        src={image.src.replace(/\.(jpg|jpeg|png|webp)$/i, '')}
                         alt={image.alt}
                         className="w-full h-64 object-cover"
                       />

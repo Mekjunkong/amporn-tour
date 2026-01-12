@@ -2,7 +2,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/lib/translations';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Phone } from 'lucide-react';
-import LazyImage from '@/components/LazyImage';
+import OptimizedImage from '@/components/OptimizedImage';
 import { useState, useEffect } from 'react';
 
 const WHATSAPP_NUMBER = '66899995677';
@@ -56,10 +56,11 @@ export default function HeroSection() {
             }}
             className="w-full h-full"
           >
-            <LazyImage
-              src="/images/doi-inthanon-hero.jpg"
+            <OptimizedImage
+              src="/images/doi-inthanon-hero"
               alt="Doi Inthanon Mountain"
               className="w-full h-[120%] object-cover"
+              priority
             />
           </div>
         )}

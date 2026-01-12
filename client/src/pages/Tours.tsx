@@ -1,7 +1,7 @@
 import { Link } from 'wouter';
 import { getAllTours } from '@/lib/tours-data';
 import { Clock, Users, ArrowRight } from 'lucide-react';
-import LazyImage from '@/components/LazyImage';
+import OptimizedImage from '@/components/OptimizedImage';
 
 /**
  * Tours Listing Page
@@ -34,8 +34,8 @@ export default function Tours() {
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden bg-slate-100">
-                <LazyImage
-                  src={tour.heroImage}
+                <OptimizedImage
+                  src={tour.heroImage.replace(/\.(jpg|jpeg|png|webp)$/i, '')}
                   alt={tour.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
