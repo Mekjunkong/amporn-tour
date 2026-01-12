@@ -201,9 +201,9 @@ export const tours: Tour[] = [
     title: 'Chiang Rai One Day',
     description: 'Discover the charm of Chiang Rai with its famous temples and cultural sites. Visit the White Temple, Blue Temple, Black Museum, and hot springs. Experience local culture and enjoy optional visits to Karen Long Neck Village.',
     shortDescription: 'Full day exploration of Chiang Rai\'s temples and cultural attractions',
-    heroImage: '/images/tour-golden-triangle-banner.jpg',
+    heroImage: '/images/tour-chiang-rai-one-day-banner.jpg',
     images: [
-      { src: '/images/IMG-20260111-WA0005.jpg', alt: 'Chiang Rai temples and Hmong village' },
+      { src: '/images/IMG-20260111-WA0004.jpg', alt: 'Chiang Rai White Temple' },
     ],
     activities: [
       'Hot Spring',
