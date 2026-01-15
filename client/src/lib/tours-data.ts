@@ -39,6 +39,8 @@ export const tours: Tour[] = [
     heroImage: '/images/tour-pha-dok-siew-banner.jpg',
     images: [
       { src: '/images/real-pha-dok-siew-1.jpg', alt: 'Tour group at Pha Dok Siew waterfall trail' },
+      { src: '/images/real-pha-dok-siew-waterfall-1.jpg', alt: 'Customer at waterfall with bamboo platform' },
+      { src: '/images/real-pha-dok-siew-waterfall-2.jpg', alt: 'Tour group viewing spectacular waterfall' },
     ],
     activities: [
       'The Highest Spot in Thailand',
