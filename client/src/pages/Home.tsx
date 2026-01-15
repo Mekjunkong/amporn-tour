@@ -3,7 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import ToursSection from "@/components/ToursSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
-import GallerySection from "@/components/GallerySection";
+
 import OfficeSection from "@/components/OfficeSection";
 
 import ContactSection from "@/components/ContactSection";
@@ -32,7 +32,7 @@ export default function Home() {
         <ToursSection />
         <TestimonialsSection />
         <AboutSection />
-        <GallerySection />
+
         <OfficeSection />
         <ContactSection />
       </main>

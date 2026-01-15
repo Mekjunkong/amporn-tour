@@ -28,4 +28,11 @@
 - [x] Add photos to Doi Inthanon National Park gallery
 - [x] Add photos to Kew Mae Pan Trek gallery
 - [x] Add photos to Elephant Care gallery
-- [ ] Save checkpoint with new photos
+- [x] Save checkpoint with new photos
+
+## Fix Landing Page Gallery Removal
+
+- [x] Check GallerySection component current state
+- [x] Remove gallery photos from displaying on homepage
+- [x] Verify gallery section is completely removed
+- [ ] Save checkpoint with fix
