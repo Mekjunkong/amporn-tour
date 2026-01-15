@@ -66,10 +66,19 @@
 - [x] Copy and optimize 3 Chiang Rai photos
 - [x] Add photos to Chiang Rai & Golden Triangle tour gallery
 - [x] Add photos to Chiang Rai One Day tour gallery
-- [ ] Save checkpoint with new photos
+- [x] Save checkpoint with new photos
 
 ## Add Real Pha Dok Siew Waterfall Photos
 
 - [x] Copy and optimize 2 waterfall photos
 - [x] Add photos to Trek Pha Dok Siew tour gallery
-- [ ] Save checkpoint with all new photos
+- [x] Save checkpoint with all new photos
+
+## Generate Temple Photos
+
+- [x] Generate 2 realistic Doi Suthep Temple photos
+- [x] Generate realistic Wat Rong Khun (White Temple) photos
+- [x] Optimize generated photos
+- [x] Add photos to Doi Suthep tour gallery
+- [x] Add photos to Chiang Rai tour galleries
+- [ ] Save checkpoint with new temple photos

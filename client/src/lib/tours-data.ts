@@ -124,7 +124,10 @@ export const tours: Tour[] = [
     description: 'Visit the most famous temple in Northern Thailand perched on a mountain. Explore the sacred Doi Suthep temple with 306 steps flanked by mythical Nagas, enjoy panoramic city views, and visit authentic Hmong villages with local crafts.',
     shortDescription: 'Visit iconic Doi Suthep temple and explore authentic Hmong mountain villages',
     heroImage: '/images/tour-doi-suthep-banner.jpg',
-    images: [],
+    images: [
+      { src: '/images/generated-doi-suthep-1.jpg', alt: 'Doi Suthep Temple golden pagoda at sunset with city views' },
+      { src: '/images/generated-doi-suthep-2.jpg', alt: 'Naga staircase with 306 steps leading to temple' },
+    ],
     activities: [
       'Doi Suthep Temple',
       'Hmong Village Market',
@@ -160,6 +163,8 @@ export const tours: Tour[] = [
     shortDescription: 'Explore Chiang Rai temples and the Golden Triangle border region',
     heroImage: '/images/tour-chiang-rai-banner.jpg',
     images: [
+      { src: '/images/generated-white-temple-1.jpg', alt: 'Wat Rong Khun White Temple with ornate architecture' },
+      { src: '/images/generated-white-temple-2.jpg', alt: 'White Temple intricate details and mirror mosaics' },
       { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
       { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
       { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
@@ -207,6 +212,8 @@ export const tours: Tour[] = [
     shortDescription: 'Full day exploration of Chiang Rai\'s temples and cultural attractions',
     heroImage: '/images/tour-chiang-rai-one-day-banner.jpg',
     images: [
+      { src: '/images/generated-white-temple-1.jpg', alt: 'Wat Rong Khun White Temple with ornate architecture' },
+      { src: '/images/generated-white-temple-2.jpg', alt: 'White Temple intricate details and mirror mosaics' },
       { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
       { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
       { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
