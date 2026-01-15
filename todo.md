@@ -118,4 +118,12 @@
 - [x] Add Wachirathan Waterfall photo to gallery
 - [x] Add King and Queen Pagodas photo to gallery
 - [x] Verify photos display correctly on tour page
-- [ ] Save checkpoint with new Doi Inthanon photos
+- [x] Save checkpoint with new Doi Inthanon photos
+
+## Fix Broken Chiang Rai Tour Card Image
+
+- [x] Investigate which Chiang Rai tour has broken image (Golden Triangle tour)
+- [x] Check image path in tours-data.ts (tour-chiang-rai-golden-triangle-banner.jpg missing)
+- [x] Fix image path (changed to generated-white-temple-1.webp)
+- [x] Verify image displays correctly on Tours page
+- [ ] Save checkpoint with image fix

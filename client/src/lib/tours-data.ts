@@ -161,7 +161,7 @@ export const tours: Tour[] = [
     title: 'Chiang Rai One Day & Golden Triangle',
     description: 'Explore Chiang Rai\'s most iconic temples including the stunning White Temple and Blue Temple. Visit the famous Golden Triangle where Thailand, Laos, and Myanmar meet. Experience hot springs, local culture, and boat trips along the Mae Khong River.',
     shortDescription: 'Explore Chiang Rai temples and the Golden Triangle border region',
-    heroImage: '/images/tour-chiang-rai-golden-triangle-banner.jpg',
+    heroImage: '/images/generated-white-temple-1.webp',
     images: [
       { src: '/images/generated-white-temple-1.webp', alt: 'Wat Rong Khun White Temple with ornate architecture' },
       { src: '/images/generated-white-temple-2.webp', alt: 'White Temple intricate details and mirror mosaics' },
