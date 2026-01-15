@@ -35,4 +35,15 @@
 - [x] Check GallerySection component current state
 - [x] Remove gallery photos from displaying on homepage
 - [x] Verify gallery section is completely removed
-- [ ] Save checkpoint with fix
+- [x] Save checkpoint with fix
+
+## Remove AI-Generated Gallery Photos
+
+- [x] Remove AI photos from Chiang Rai & Golden Triangle tour
+- [x] Remove AI photos from Chiang Rai One Day tour
+- [x] Remove AI photos from Doi Suthep Temple tour
+- [x] Remove AI photos from Doi Inthanon National Park tour
+- [x] Remove AI photos from Elephant Care tour
+- [x] Remove AI photos from Trek Pha Dok Siew tour
+- [x] Remove AI photos from Trek Kew Mae Pan tour
+- [ ] Save checkpoint with cleaned galleries
