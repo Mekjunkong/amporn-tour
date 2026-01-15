@@ -59,4 +59,11 @@
 
 - [x] Remove 3 AI-generated photos from original Doi Inthanon tour (1,400 THB) - No AI photos found, only real photos
 - [x] Fix broken logo
-- [ ] Save checkpoint with fixes
+- [x] Save checkpoint with fixes
+
+## Add Real Chiang Rai Photos
+
+- [x] Copy and optimize 3 Chiang Rai photos
+- [x] Add photos to Chiang Rai & Golden Triangle tour gallery
+- [x] Add photos to Chiang Rai One Day tour gallery
+- [ ] Save checkpoint with new photos

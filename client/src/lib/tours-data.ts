@@ -157,7 +157,11 @@ export const tours: Tour[] = [
     description: 'Explore Chiang Rai\'s most iconic temples including the stunning White Temple and Blue Temple. Visit the famous Golden Triangle where Thailand, Laos, and Myanmar meet. Experience hot springs, local culture, and boat trips along the Mae Khong River.',
     shortDescription: 'Explore Chiang Rai temples and the Golden Triangle border region',
     heroImage: '/images/tour-chiang-rai-banner.jpg',
-    images: [],
+    images: [
+      { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
+      { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
+      { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
+    ],
     activities: [
       'Hot Spring',
       'White Temple',
@@ -200,7 +204,11 @@ export const tours: Tour[] = [
     description: 'Discover the charm of Chiang Rai with its famous temples and cultural sites. Visit the White Temple, Blue Temple, Black Museum, and hot springs. Experience local culture and enjoy optional visits to Karen Long Neck Village.',
     shortDescription: 'Full day exploration of Chiang Rai\'s temples and cultural attractions',
     heroImage: '/images/tour-chiang-rai-one-day-banner.jpg',
-    images: [],
+    images: [
+      { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
+      { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
+      { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
+    ],
     activities: [
       'Hot Spring',
       'White Temple',
