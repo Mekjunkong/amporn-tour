@@ -98,4 +98,14 @@
 - [x] Find current title implementation
 - [x] Shorten title from 64 to 43 characters ("Amporn Tour - Chiang Mai Private Tours")
 - [x] Verify title displays correctly (38 characters - within 30-60 range)
-- [ ] Save checkpoint with SEO fix
+- [x] Save checkpoint with SEO fix
+
+## Add Chiang Rai Customer Photos
+
+- [x] Copy 3 customer photos to project images folder
+- [x] Optimize photos to WebP format
+- [x] Add Long Neck Karen village photo to galleries
+- [x] Add Mekong River boat tour photo to galleries
+- [x] Add Karen girls traditional dress photo to galleries
+- [x] Verify photos display correctly on tour pages
+- [ ] Save checkpoint with new Chiang Rai photos

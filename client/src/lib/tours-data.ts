@@ -161,13 +161,17 @@ export const tours: Tour[] = [
     title: 'Chiang Rai One Day & Golden Triangle',
     description: 'Explore Chiang Rai\'s most iconic temples including the stunning White Temple and Blue Temple. Visit the famous Golden Triangle where Thailand, Laos, and Myanmar meet. Experience hot springs, local culture, and boat trips along the Mae Khong River.',
     shortDescription: 'Explore Chiang Rai temples and the Golden Triangle border region',
-    heroImage: '/images/tour-chiang-rai-banner.jpg',
+    heroImage: '/images/tour-chiang-rai-golden-triangle-banner.jpg',
     images: [
       { src: '/images/generated-white-temple-1.webp', alt: 'Wat Rong Khun White Temple with ornate architecture' },
       { src: '/images/generated-white-temple-2.webp', alt: 'White Temple intricate details and mirror mosaics' },
       { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
       { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
       { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
+      { src: '/images/real-chiang-rai-golden-triangle-boat.jpg', alt: 'Boat trip on Mae Khong River at Golden Triangle' },
+      { src: '/images/chiang-rai-boat-tour.webp', alt: 'Group tour on boat at Mekong River Golden Triangle' },
+      { src: '/images/chiang-rai-karen-village.webp', alt: 'Long Neck Karen village visit with colorful textiles' },
+      { src: '/images/chiang-rai-karen-girls.webp', alt: 'Long Neck Karen girls in traditional dress' },
     ],
     activities: [
       'Hot Spring',
@@ -217,6 +221,8 @@ export const tours: Tour[] = [
       { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
       { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
       { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
+      { src: '/images/chiang-rai-karen-village.webp', alt: 'Long Neck Karen village visit with colorful textiles' },
+      { src: '/images/chiang-rai-karen-girls.webp', alt: 'Long Neck Karen girls in traditional dress' },
     ],
     activities: [
       'Hot Spring',
