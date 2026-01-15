@@ -1,19 +1,5 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/lib/translations';
-import OptimizedImage from '@/components/OptimizedImage';
-
-const galleryImages = [
-  '/images/landing-gallery-1',
-  '/images/landing-gallery-2',
-  '/images/landing-gallery-3',
-  '/images/landing-gallery-4',
-  '/images/landing-gallery-5',
-  '/images/landing-gallery-6',
-  '/images/landing-gallery-7',
-  '/images/landing-gallery-8',
-  '/images/landing-gallery-9',
-  '/images/landing-gallery-10',
-];
 
 export default function GallerySection() {
   const { language } = useLanguage();
@@ -28,24 +14,18 @@ export default function GallerySection() {
             {t.nav.gallery}
           </h2>
           <p className="text-lg text-slate-600">
-            Moments from our tours and adventures
+            Explore our tour packages to see more photos and details
           </p>
         </div>
 
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {galleryImages.map((image, index) => (
-            <div
-              key={index}
-              className="relative overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 aspect-square"
-            >
-              <OptimizedImage
-                src={image}
-                alt={`Gallery image ${index + 1}`}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
+        {/* Call to Action */}
+        <div className="text-center">
+          <a 
+            href="/tours" 
+            className="inline-block px-8 py-3 bg-primary text-white rounded-lg hover:opacity-90 transition-opacity"
+          >
+            View All Tours
+          </a>
         </div>
       </div>
     </section>

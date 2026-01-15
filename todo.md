@@ -12,4 +12,10 @@
 - [x] Add preload hints for critical resources
 - [x] Optimize font loading strategy
 - [x] Create performance optimization documentation
-- [ ] Verify performance improvements and save checkpoint
+- [x] Verify performance improvements and save checkpoint
+
+## Gallery Updates
+
+- [x] Remove all landing page gallery photos
+- [x] Update GallerySection component to hide/remove gallery
+- [ ] Save checkpoint with changes
