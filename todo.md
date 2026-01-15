@@ -53,4 +53,10 @@
 - [x] Add new tour package to tours-data.ts with details from promotional image
 - [x] Generate banner image for new tour
 - [x] Verify tour displays correctly on website
-- [ ] Save checkpoint with new tour
+- [x] Save checkpoint with new tour
+
+## Remove AI Photos from New Doi Inthanon Tour
+
+- [x] Remove 3 AI-generated photos from original Doi Inthanon tour (1,400 THB) - No AI photos found, only real photos
+- [x] Fix broken logo
+- [ ] Save checkpoint with fixes

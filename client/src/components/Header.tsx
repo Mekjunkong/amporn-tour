@@ -23,7 +23,7 @@ export default function Header() {
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 hover:opacity-80 transition-opacity group">
           <img
-            src="/images/amporn-logo-new.png"
+            src="/images/amporn-logo-new.jpg"
             alt="Amporn Tour Logo"
             className="w-12 h-12 md:w-14 md:h-14 group-hover:scale-110 transition-transform duration-300"
           />
