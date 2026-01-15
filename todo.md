@@ -46,4 +46,11 @@
 - [x] Remove AI photos from Elephant Care tour
 - [x] Remove AI photos from Trek Pha Dok Siew tour
 - [x] Remove AI photos from Trek Kew Mae Pan tour
-- [ ] Save checkpoint with cleaned galleries
+- [x] Save checkpoint with cleaned galleries
+
+## Create New Doi Inthanon Tour with Sirithan Waterfall
+
+- [x] Add new tour package to tours-data.ts with details from promotional image
+- [x] Generate banner image for new tour
+- [x] Verify tour displays correctly on website
+- [ ] Save checkpoint with new tour
