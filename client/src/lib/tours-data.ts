@@ -308,6 +308,9 @@ export const tours: Tour[] = [
     images: [
       { src: '/images/real-doi-inthanon-1.jpg', alt: 'Group at highest spot in Thailand sign' },
       { src: '/images/real-doi-inthanon-2.jpg', alt: 'King and Queen Pagodas with gardens' },
+      { src: '/images/doi-inthanon-king-queen-pagodas.webp', alt: 'King and Queen Pagodas with colorful flower gardens' },
+      { src: '/images/doi-inthanon-wachirathan-waterfall.webp', alt: 'Wachirathan Waterfall in Doi Inthanon National Park' },
+      { src: '/images/doi-inthanon-hmong-market.webp', alt: 'Tourists shopping at Hmong Market on Doi Inthanon' },
     ],
     activities: [
       'The Highest Spot in Thailand',

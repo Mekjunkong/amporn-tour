@@ -108,4 +108,14 @@
 - [x] Add Mekong River boat tour photo to galleries
 - [x] Add Karen girls traditional dress photo to galleries
 - [x] Verify photos display correctly on tour pages
-- [ ] Save checkpoint with new Chiang Rai photos
+- [x] Save checkpoint with new Chiang Rai photos
+
+## Add Doi Inthanon Customer Photos
+
+- [x] Copy 3 customer photos to project images folder
+- [x] Optimize photos to WebP format
+- [x] Add Hmong market photo to gallery
+- [x] Add Wachirathan Waterfall photo to gallery
+- [x] Add King and Queen Pagodas photo to gallery
+- [x] Verify photos display correctly on tour page
+- [ ] Save checkpoint with new Doi Inthanon photos
