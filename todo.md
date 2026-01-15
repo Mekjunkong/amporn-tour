@@ -81,4 +81,14 @@
 - [x] Optimize generated photos
 - [x] Add photos to Doi Suthep tour gallery
 - [x] Add photos to Chiang Rai tour galleries
-- [ ] Save checkpoint with new temple photos
+- [x] Save checkpoint with new temple photos
+
+## Merge Doi Inthanon Tours
+
+- [x] Read both Doi Inthanon tour data (1,400 THB and 1,500 THB Sirithan)
+- [x] Merge Sirithan Waterfall content into 1,400 THB tour
+- [x] Update activities to include Sirithan Waterfall
+- [x] Remove Sirithan Waterfall tour (1,500 THB) from tours data
+- [x] Update price to 1,500 THB
+- [x] Verify tours display correctly on website
+- [ ] Save checkpoint with merged tour
