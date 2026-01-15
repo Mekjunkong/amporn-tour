@@ -12,7 +12,7 @@ export interface SEOConfig {
 }
 
 export const defaultSEO: SEOConfig = {
-  title: 'Amporn Tour | Private Tours in Chiang Mai for European Travelers',
+  title: 'Amporn Tour - Chiang Mai Private Tours',
   description: 'Private tours in Chiang Mai for European travelers. Flexible itineraries, local expertise, excellent value.',
   keywords: [
     'Chiang Mai tours',

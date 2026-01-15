@@ -91,4 +91,11 @@
 - [x] Remove Sirithan Waterfall tour (1,500 THB) from tours data
 - [x] Update price to 1,500 THB
 - [x] Verify tours display correctly on website
-- [ ] Save checkpoint with merged tour
+- [x] Save checkpoint with merged tour
+
+## Fix SEO Title Length
+
+- [x] Find current title implementation
+- [x] Shorten title from 64 to 43 characters ("Amporn Tour - Chiang Mai Private Tours")
+- [x] Verify title displays correctly (38 characters - within 30-60 range)
+- [ ] Save checkpoint with SEO fix
