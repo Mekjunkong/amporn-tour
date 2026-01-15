@@ -19,3 +19,13 @@
 - [x] Remove all landing page gallery photos
 - [x] Update GallerySection component to hide/remove gallery
 - [ ] Save checkpoint with changes
+
+## Add Real Tour Photos
+
+- [x] Copy uploaded photos to images directory
+- [x] Optimize photos for web (resize and convert to WebP)
+- [x] Add photos to Pha Dok Siew Trek gallery
+- [x] Add photos to Doi Inthanon National Park gallery
+- [x] Add photos to Kew Mae Pan Trek gallery
+- [x] Add photos to Elephant Care gallery
+- [ ] Save checkpoint with new photos

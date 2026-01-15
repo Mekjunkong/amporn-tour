@@ -38,6 +38,7 @@ export const tours: Tour[] = [
     shortDescription: 'Trek through Thailand\'s highest mountain with temple visits and waterfall exploration',
     heroImage: '/images/tour-pha-dok-siew-banner.jpg',
     images: [
+      { src: '/images/real-pha-dok-siew-1.jpg', alt: 'Tour group at Pha Dok Siew waterfall trail' },
       { src: '/images/tour-pha-dok-siew-gallery-1.jpg', alt: 'Pha Dok Siew waterfall' },
       { src: '/images/tour-pha-dok-siew-gallery-2.jpg', alt: 'Hiking trail through forest' },
       { src: '/images/tour-pha-dok-siew-gallery-3.jpg', alt: 'Mountain peak panoramic view' },
@@ -83,10 +84,12 @@ export const tours: Tour[] = [
     shortDescription: 'Trek and interact with elephants, bamboo rafting, and waterfall exploration',
     heroImage: '/images/tour-elephant-banner.jpg',
     images: [
+      { src: '/images/real-elephant-feeding.jpg', alt: 'Feeding elephants in sanctuary' },
+      { src: '/images/real-elephant-bathing.jpg', alt: 'Elephant bathing in river' },
+      { src: '/images/real-elephant-group.jpg', alt: 'Group experience with elephants' },
+      { src: '/images/real-elephant-rafting.jpg', alt: 'Bamboo rafting adventure' },
       { src: '/images/tour-elephant-gallery-1.jpg', alt: 'Elephant in natural habitat' },
-      { src: '/images/tour-elephant-gallery-2.jpg', alt: 'Bamboo rafting on river' },
       { src: '/images/tour-elephant-gallery-3.jpg', alt: 'Mae Wang waterfall' },
-      { src: '/images/tour-elephant-gallery-4.jpg', alt: 'Elephant sanctuary experience' },
     ],
     activities: [
       'Elephant Care',
@@ -258,6 +261,8 @@ export const tours: Tour[] = [
     shortDescription: 'Trek the scenic Kew Mae Pan trail on Thailand\'s highest mountain',
     heroImage: '/images/tour-kew-mae-pan-banner.jpg',
     images: [
+      { src: '/images/real-kew-mae-pan-1.jpg', alt: 'Tour group at Kew Mae Pan entrance' },
+      { src: '/images/real-kew-mae-pan-2.jpg', alt: 'Mountain viewpoint with visitors' },
       { src: '/images/tour-kew-mae-pan-gallery-1.jpg', alt: 'Kew Mae Pan nature trail' },
       { src: '/images/tour-kew-mae-pan-gallery-2.jpg', alt: 'Mountain ridge hiking' },
       { src: '/images/tour-kew-mae-pan-gallery-3.jpg', alt: 'Forest canopy with mist' },
@@ -303,6 +308,8 @@ export const tours: Tour[] = [
     shortDescription: 'Full day at Thailand\'s highest mountain with temples and local villages',
     heroImage: '/images/tour-doi-inthanon-banner.jpg',
     images: [
+      { src: '/images/real-doi-inthanon-1.jpg', alt: 'Group at highest spot in Thailand sign' },
+      { src: '/images/real-doi-inthanon-2.jpg', alt: 'King and Queen Pagodas with gardens' },
       { src: '/images/tour-doi-inthanon-park-gallery-1.jpg', alt: 'Wachirathan waterfall' },
       { src: '/images/tour-doi-inthanon-park-gallery-2.jpg', alt: 'Mountain landscape' },
       { src: '/images/tour-doi-inthanon-park-gallery-3.jpg', alt: 'White Karen village' },
