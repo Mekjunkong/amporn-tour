@@ -446,8 +446,9 @@ export const tours: Tour[] = [
     heroImage: '/images/zipline-adventure-cover.webp',
     images: [
       { src: '/images/zipline-adventure-cover.webp', alt: 'Thrilling zipline adventure through jungle canopy' },
-      { src: '/images/1000016263.webp', alt: 'King Kong Zipline program pricing and details' },
-      { src: '/images/1000016266.webp', alt: 'Zipline adventure pickup times and what to bring' },
+      { src: '/images/kingkong-zipline-1.webp', alt: 'Ziplining through lush green mountains with safety equipment' },
+      { src: '/images/kingkong-zipline-2.webp', alt: 'Adventure seekers enjoying zipline experience in jungle' },
+      { src: '/images/kingkong-zipline-3.webp', alt: 'Group on sky bridge and zipline platforms in canopy' },
     ],
     activities: [
       'Zipline Adventure (9-11 ziplines depending on program)',

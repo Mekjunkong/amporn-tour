@@ -269,4 +269,20 @@
 ### Verification
 - [x] Verify King Kong Zipline displays with generated photo
 - [x] Verify Elephant Sanctuary displays with correct cover photo
-- [ ] Save checkpoint with updated photos
+- [x] Save checkpoint with updated photos
+
+## Replace King Kong Zipline Poster Photos
+
+### Remove Poster Photos
+- [x] Remove 1000016263.webp (pricing poster) from gallery
+- [x] Remove 1000016266.webp (what to wear/bring poster) from gallery
+- [x] Keep only AI-generated zipline-adventure-cover.webp
+
+### Find Better Photos
+- [x] Search for authentic King Kong Zipline action photos online
+- [x] Download and optimize 3 high-quality zipline action photos
+- [x] Add new photos to tour gallery
+
+### Verification
+- [x] Verify King Kong Zipline gallery shows only authentic action photos
+- [ ] Save checkpoint with updated gallery
