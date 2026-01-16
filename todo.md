@@ -196,3 +196,61 @@
 - [x] Verify updates display correctly on Tours page
 - [x] Verify updates display correctly on tour detail page
 - [ ] Save checkpoint with updated tour details
+
+## Add Two New Tours: Dan Thewada & King Kong Zipline
+
+### Dan Thewada - Wat Baan Den - Sticky Waterfall Tour
+- [x] Copy 7 tour photos to project images folder
+- [x] Optimize photos to WebP format
+- [x] Create tour entry with details:
+  - Price: 1,200 THB
+  - Pickup: 08:30-09:00 AM
+  - Duration: 7-8 hours
+  - Activities: Dan Thewada Land of Angel Waterfall Park, Wat Baan Den, Sticky Waterfall
+  - Package includes: Transportation, Entrance ticket, Accident insurance, Lunch (Pad Thai)
+- [x] Add 7 photos to tour gallery
+- [x] Insert tour in appropriate position
+
+### King Kong Zipline Adventure Tour
+- [x] Copy 2 zipline photos to project images folder
+- [x] Optimize photos to WebP format
+- [x] Create tour entry with pricing from brochure:
+  - Ultimate Program: 1,900 THB (19 platforms, 9 ziplines)
+  - Extreme Program: 2,500 THB (11 platforms, 11 ziplines including 1,200m longest)
+- [x] Add tour details and activities
+- [x] Insert tour in appropriate position
+
+### Wat Umong & Doi Suthep at Night Tour
+- [x] Copy 4 tour photos to project images folder
+- [x] Optimize photos to WebP format
+- [x] Create tour entry with details:
+  - Price: 650 THB
+  - Pickup: 04:40 PM
+  - Duration: 3-4 hours
+  - Activities: Wat Umong, Doi Suthep Temple
+  - Package includes: Transportation, Tour guide, Entrance ticket, Accident insurance
+- [x] Add 4 photos to tour gallery
+- [x] Insert tour in appropriate position
+
+### Elephant Jungle Sanctuary Half-Day Tour
+- [x] Copy 4 elephant sanctuary photos to project images folder
+- [x] Optimize photos to WebP format
+- [x] Create tour entry with details:
+  - Price: 1,900 THB
+  - Pickup: Morning 06:30-07:00 AM, Afternoon 11:30-12:00 PM
+  - Duration: 4-5 hours
+  - Activities: Personal interaction with elephants, Educational session, Elephant mud spa, River bathing
+  - Package includes: Food & drinks, Round-trip transfer, English-speaking guide, Lunch, Snacks, Drinking water, Elephant food
+- [x] Add 4 photos to tour gallery
+- [x] Insert tour in appropriate position
+
+### Update Existing Doi Suthep Tour
+- [x] Remove "Lunch" from package includes (half-day tour doesn't include lunch)
+
+### Verification
+- [x] Verify Dan Thewada tour displays correctly
+- [x] Verify King Kong Zipline tour displays correctly
+- [x] Verify Wat Umong & Doi Suthep tour displays correctly
+- [x] Verify Elephant Sanctuary tour displays correctly
+- [x] Verify Doi Suthep tour updated correctly (no lunch)
+- [ ] Save checkpoint with all four new tours and update
