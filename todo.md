@@ -126,4 +126,12 @@
 - [x] Check image path in tours-data.ts (tour-chiang-rai-golden-triangle-banner.jpg missing)
 - [x] Fix image path (changed to generated-white-temple-1.webp)
 - [x] Verify image displays correctly on Tours page
-- [ ] Save checkpoint with image fix
+- [x] Save checkpoint with image fix
+
+## Fix Long Neck Karen Image Cropping
+
+- [x] Investigate image display component (TourDetail gallery line 129)
+- [x] Check current object-fit and aspect-ratio CSS settings (object-cover)
+- [x] Adjust CSS to show faces properly (changed to object-contain with bg-slate-50)
+- [x] Test on mobile viewport to verify faces are visible (desktop verified, object-contain working)
+- [ ] Save checkpoint with image display fix

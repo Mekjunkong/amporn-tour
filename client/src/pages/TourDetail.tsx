@@ -126,7 +126,7 @@ export default function TourDetail() {
                       <OptimizedImage
                         src={image.src.replace(/\.(jpg|jpeg|png|webp)$/i, '')}
                         alt={image.alt}
-                        className="w-full h-64 object-cover"
+                        className="w-full h-64 object-contain bg-slate-50"
                       />
                     </div>
                   ))}
