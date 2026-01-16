@@ -443,8 +443,9 @@ export const tours: Tour[] = [
     title: 'King Kong Zipline Adventure',
     description: 'Experience the thrill of flying through the jungle canopy with King Kong Zipline. Choose between Ultimate Program (1,900 THB) with 19 platforms and 9 ziplines, or Extreme Program (2,500 THB) with 11 platforms and 11 ziplines including the longest 1,200m zipline. Enjoy sky bridges, spiral staircases, and nature trail walkways in a safe and exciting environment.',
     shortDescription: 'Fly through jungle canopy with ziplines, sky bridges, and spiral staircases',
-    heroImage: '/images/1000016263.webp',
+    heroImage: '/images/zipline-adventure-cover.webp',
     images: [
+      { src: '/images/zipline-adventure-cover.webp', alt: 'Thrilling zipline adventure through jungle canopy' },
       { src: '/images/1000016263.webp', alt: 'King Kong Zipline program pricing and details' },
       { src: '/images/1000016266.webp', alt: 'Zipline adventure pickup times and what to bring' },
     ],
@@ -529,12 +530,12 @@ export const tours: Tour[] = [
     title: 'Elephant Jungle Sanctuary: Half-Day Program',
     description: 'Spend a meaningful half-day with elephants in an ethical environment while learning about their behavior and conservation. Experience personal interaction with elephants in a responsible setting, participate in elephant mud spa treatment, assist with river bathing and cleaning, with photography opportunities throughout the experience.',
     shortDescription: 'Ethical half-day elephant experience with mud spa, river bathing, and conservation education',
-    heroImage: '/images/1000016288.webp',
+    heroImage: '/images/1000016290.webp',
     images: [
+      { src: '/images/1000016290.webp', alt: 'Tourists splashing water with elephant during bath time' },
       { src: '/images/1000016288.webp', alt: 'Tourists feeding bananas to elephants at sanctuary' },
       { src: '/images/1000016286.webp', alt: 'Visitors bathing elephant in river' },
       { src: '/images/1000016295.webp', alt: 'Close interaction feeding elephant in natural setting' },
-      { src: '/images/1000016290.webp', alt: 'Tourists splashing water with elephant during bath time' },
     ],
     activities: [
       'Personal Interaction with Elephants',

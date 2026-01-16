@@ -253,4 +253,20 @@
 - [x] Verify Wat Umong & Doi Suthep tour displays correctly
 - [x] Verify Elephant Sanctuary tour displays correctly
 - [x] Verify Doi Suthep tour updated correctly (no lunch)
-- [ ] Save checkpoint with all four new tours and update
+- [x] Save checkpoint with all four new tours and update
+
+## Update Tour Photos
+
+### King Kong Zipline Tour
+- [x] Generate AI photo of zipline adventure in jungle canopy (don't use poster photo)
+- [x] Update tour entry to use generated photo as cover image
+- [x] Keep zipline brochure photos in gallery only
+
+### Elephant Sanctuary Tour
+- [x] Change cover photo to river bathing image (1000016290.webp)
+- [x] Reorder gallery photos with river bathing as first/cover photo
+
+### Verification
+- [x] Verify King Kong Zipline displays with generated photo
+- [x] Verify Elephant Sanctuary displays with correct cover photo
+- [ ] Save checkpoint with updated photos
