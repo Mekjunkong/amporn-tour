@@ -142,4 +142,31 @@
 - [x] Find incorrect path in tours-data.ts (line 171)
 - [x] Fix image path to match actual filename
 - [x] Verify image loads correctly on dev server (will be fixed on published site after deploy)
-- [ ] Save checkpoint with image path fix
+- [x] Save checkpoint with image path fix
+
+## Reorder Tours and Update Photos
+
+### Tour Reordering
+- [x] Reorder tours in tours-data.ts to match new sequence:
+  1. Chiang Rai One Day & Golden Triangle
+  2. Chiang Rai One Day
+  3. Doi Inthanon National Park
+  4. Doi Inthanon Trek Pha Dok Siew
+  5. Doi Inthanon Trek Kew Mae Pan
+  6. One Day Trek & Elephant Care
+  7. Doi Suthep Temple - Hmong Village
+
+### Add Photos to Kew Mae Pan Trek
+- [x] Copy 2 new photos (King & Queen Pagodas, Wachirathan Waterfall with rainbow)
+- [x] Optimize photos to WebP format
+- [x] Add photos to Kew Mae Pan trek gallery
+
+### Replace Doi Suthep Staircase Photo
+- [x] Copy authentic Naga staircase photo to project
+- [x] Optimize photo to WebP format
+- [x] Replace AI-generated staircase photo with authentic customer photo
+
+### Verification
+- [x] Verify tour order on Tours page (correct order confirmed)
+- [x] Verify new photos display correctly (Kew Mae Pan and Doi Suthep photos confirmed)
+- [ ] Save checkpoint with all updates
