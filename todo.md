@@ -186,4 +186,13 @@
 - [x] Verify tour displays on Tours page
 - [x] Verify tour detail page works correctly
 - [x] Verify all photos display properly
-- [ ] Save checkpoint with new tour
+- [x] Save checkpoint with new tour
+
+## Update Chiang Rai Lalita Cafe Tour Details
+
+- [x] Update price from 0 THB to 1,300 THB
+- [x] Update pickup time from TBD to 07:00-07:30 AM
+- [x] Update duration from TBD to 8-9 hours
+- [x] Verify updates display correctly on Tours page
+- [x] Verify updates display correctly on tour detail page
+- [ ] Save checkpoint with updated tour details
