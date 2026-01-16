@@ -169,4 +169,21 @@
 ### Verification
 - [x] Verify tour order on Tours page (correct order confirmed)
 - [x] Verify new photos display correctly (Kew Mae Pan and Doi Suthep photos confirmed)
-- [ ] Save checkpoint with all updates
+- [x] Save checkpoint with all updates
+
+## Add New Tour: Chiang Rai One Day & Lalita Cafe
+
+### Photo Preparation
+- [x] Copy 6 tour photos to project images folder
+- [x] Optimize photos to WebP format
+
+### Tour Creation
+- [x] Create new tour entry in tours-data.ts with all details
+- [x] Add 6 photos to tour gallery
+- [x] Insert new tour at position 2 (after Chiang Rai Golden Triangle)
+
+### Verification
+- [x] Verify tour displays on Tours page
+- [x] Verify tour detail page works correctly
+- [x] Verify all photos display properly
+- [ ] Save checkpoint with new tour
