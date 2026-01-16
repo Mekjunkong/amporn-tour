@@ -168,7 +168,7 @@ export const tours: Tour[] = [
       { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
       { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
       { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
-      { src: '/images/real-chiang-rai-golden-triangle-boat.jpg', alt: 'Boat trip on Mae Khong River at Golden Triangle' },
+      { src: '/images/chiang-rai-boat-tour.webp', alt: 'Boat trip on Mae Khong River at Golden Triangle' },
       { src: '/images/chiang-rai-boat-tour.webp', alt: 'Group tour on boat at Mekong River Golden Triangle' },
       { src: '/images/chiang-rai-karen-village.webp', alt: 'Long Neck Karen village visit with colorful textiles' },
       { src: '/images/chiang-rai-karen-girls.webp', alt: 'Long Neck Karen girls in traditional dress' },

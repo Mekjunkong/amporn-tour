@@ -134,4 +134,12 @@
 - [x] Check current object-fit and aspect-ratio CSS settings (object-cover)
 - [x] Adjust CSS to show faces properly (changed to object-contain with bg-slate-50)
 - [x] Test on mobile viewport to verify faces are visible (desktop verified, object-contain working)
-- [ ] Save checkpoint with image display fix
+- [x] Save checkpoint with image display fix
+
+## Fix Broken Boat Tour Image Path
+
+- [x] Check actual filename in images folder (chiang-rai-boat-tour.webp)
+- [x] Find incorrect path in tours-data.ts (line 171)
+- [x] Fix image path to match actual filename
+- [x] Verify image loads correctly on dev server (will be fixed on published site after deploy)
+- [ ] Save checkpoint with image path fix
