@@ -285,4 +285,32 @@
 
 ### Verification
 - [x] Verify King Kong Zipline gallery shows only authentic action photos
-- [ ] Save checkpoint with updated gallery
+- [x] Save checkpoint with updated gallery
+
+## Add New Extreme Zipline Program & Fix Sticky Waterfall Photos
+
+### New Extreme Zipline Program Tour
+- [x] Search for authentic photos of extreme zipline with luge kart and giant swings
+- [x] Download and optimize 4 high-quality photos
+- [x] Create new tour entry with details from poster:
+  - Price: 2,450 THB
+  - 38 platforms, 21 ziplines (including 5 longest: 900m, 400m, 350m)
+  - 2 Abseil (15m, 30m)
+  - 5 Sky Bridges
+  - 6 Staircase
+  - 1 Luge Kart (2,100 meters - only one in Thailand)
+  - 1 Big Giant Swings (only one in Thailand)
+  - Duration: Up to 2 hours total activity
+  - Package includes: Round-trip transfer, Thai buffet, tea, coffee
+- [x] Add photos to tour gallery (no poster images)
+- [x] Insert tour in appropriate position
+
+### Fix Sticky Waterfall Tour Photos
+- [x] Identify which 2 temple photos to remove from gallery
+- [x] Remove the 2 temple photos from Sticky Waterfall tour (1000016244.webp and 1000016251.webp)
+- [x] Keep only waterfall and nature-related photos
+
+### Verification
+- [x] Verify new Extreme Zipline tour displays correctly
+- [x] Verify Sticky Waterfall tour shows only waterfall/nature photos
+- [ ] Save checkpoint with new tour and fixes
