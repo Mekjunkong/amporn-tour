@@ -399,9 +399,8 @@ export const tours: Tour[] = [
     title: 'Dan Thewada - Wat Baan Den - Sticky Waterfall',
     description: 'Discover the beautiful of Chiang Mai\'s most enchanting nature spots in one day. Visit the dreamy Dan Thewada Land of Angel Waterfall Park, explore the stunning Wat Baan Den temple complex, and climb the unique Sticky Waterfall where you can enjoy a refreshing jungle waterfall climbing adventure.',
     shortDescription: 'Explore Dan Thewada waterfall park, Wat Baan Den temple, and climb Sticky Waterfall',
-    heroImage: '/images/1000016246.webp',
+    heroImage: '/images/1000016260.webp',
     images: [
-      { src: '/images/1000016246.webp', alt: 'Dan Thewada Land of Angel Waterfall Park with beautiful cascades' },
       { src: '/images/1000016260.webp', alt: 'Sticky Waterfall unique limestone cascade' },
       { src: '/images/1000016257.webp', alt: 'Climbing the Sticky Waterfall barefoot' },
       { src: '/images/1000016254.webp', alt: 'Dan Thewada waterfall surrounded by lush jungle' },

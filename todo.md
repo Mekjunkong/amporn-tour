@@ -313,4 +313,11 @@
 ### Verification
 - [x] Verify new Extreme Zipline tour displays correctly
 - [x] Verify Sticky Waterfall tour shows only waterfall/nature photos
-- [ ] Save checkpoint with new tour and fixes
+- [x] Save checkpoint with new tour and fixes
+
+## Remove Additional Temple Photo from Sticky Waterfall Tour
+
+- [x] Identify which photo shows the large white Buddha statue (1000016246.webp - Dan Thewada)
+- [x] Remove this photo from Sticky Waterfall tour gallery and update hero image
+- [x] Verify gallery displays correctly with only waterfall/nature photos (4 photos remaining)
+- [ ] Save checkpoint with photo removal
