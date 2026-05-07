@@ -1,155 +1,96 @@
-import { Award, Shield, Users, Clock, CheckCircle2 } from 'lucide-react';
-import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { Award, CheckCircle2, Clock, MapPin, MessageCircle, Shield, Users } from 'lucide-react';
 
-/**
- * Trust Signals Section
- * Displays company credentials, certifications, and trust indicators
- */
+const WHATSAPP_NUMBER = '66899995677';
+const WHATSAPP_MESSAGE = encodeURIComponent(
+  'Hello Amporn Tour, I would like to check availability and price for a Chiang Mai private tour. My travel date is:'
+);
+const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+
+const trustItems = [
+  {
+    icon: Award,
+    title: 'Thai tourism license 22/00688',
+    description: 'Amporn Tour Chiang Mai is listed with an official Chiang Mai tourism license.',
+  },
+  {
+    icon: Users,
+    title: 'Local Chiang Mai guides',
+    description: 'Hosted by a local team that knows the temples, mountains, waterfalls, pickup routes, and seasonal conditions.',
+  },
+  {
+    icon: MapPin,
+    title: 'Hotel pickup available',
+    description: 'Pickup can be arranged from hotels in Chiang Mai city. Exact pickup time is confirmed before booking.',
+  },
+  {
+    icon: MessageCircle,
+    title: 'WhatsApp booking',
+    description: 'Send your date, group size, and preferred tour. The team confirms availability and price before payment.',
+  },
+  {
+    icon: CheckCircle2,
+    title: 'Custom private tours',
+    description: 'Itineraries can be adjusted for families, couples, photographers, first-time visitors, and slower travel days.',
+  },
+  {
+    icon: Shield,
+    title: 'Accident insurance included',
+    description: 'Core tours include transportation, guide service, listed entrance tickets, lunch where stated, and accident insurance.',
+  },
+];
+
 export default function TrustSignals() {
-  const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation();
-
-  const credentials = [
-    {
-      icon: Award,
-      title: 'Licensed Tour Operator',
-      description: 'Official Tourism License #22/00688 & #22/00648',
-      highlight: true,
-    },
-    {
-      icon: Users,
-      title: '10+ Years Experience',
-      description: 'Serving international travelers since 2014',
-    },
-    {
-      icon: Clock,
-      title: '24/7 Customer Support',
-      description: 'Always available via WhatsApp and phone',
-    },
-    {
-      icon: Shield,
-      title: 'Safety Certified',
-      description: 'Accident insurance included in all tours',
-    },
-    {
-      icon: CheckCircle2,
-      title: '1000+ Happy Customers',
-      description: 'Trusted by travelers from 50+ countries',
-    },
-    {
-      icon: Award,
-      title: 'Professional Guides',
-      description: 'Trained, certified, and English-speaking guides',
-    },
-  ];
-
   return (
-    <section
-      ref={sectionRef}
-      className={`py-16 md:py-24 bg-gradient-to-br from-slate-900 to-slate-800 transition-all duration-1000 ${
-        sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
-    >
+    <section className="bg-slate-950 py-14 md:py-20 text-white" aria-labelledby="trust-heading">
       <div className="container">
-        {/* Section Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-display text-white mb-4">
-            Why Trust Amporn Tour
-          </h2>
-          <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            We're committed to providing safe, professional, and memorable tour experiences backed by official credentials and customer satisfaction.
-          </p>
-        </div>
-
-        {/* Credentials Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
-          {credentials.map((credential, index) => {
-            const Icon = credential.icon;
-            return (
-              <div
-                key={index}
-                className={`p-6 rounded-lg bg-white/10 backdrop-blur border border-white/20 hover:bg-white/15 transition-all duration-300 ${
-                  sectionVisible
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-0 translate-y-10'
-                }`}
-                style={{
-                  transitionDelay: sectionVisible ? `${index * 50}ms` : '0ms',
-                }}
+        <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-amber-300">
+              Licensed Chiang Mai private tour operator
+            </p>
+            <h2 id="trust-heading" className="mb-5 text-3xl font-bold leading-tight md:text-5xl font-display">
+              Book with a real local office, clear prices, and fast WhatsApp confirmation.
+            </h2>
+            <p className="mb-6 max-w-xl text-base leading-relaxed text-slate-300 md:text-lg">
+              Amporn Tour focuses on private and small-group day tours around Chiang Mai, Chiang Rai, Doi Inthanon, temples, waterfalls, trekking routes, and family-friendly itineraries.
+            </p>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-green-500 px-5 py-3 font-semibold text-white transition-colors hover:bg-green-600"
               >
-                <div className="flex items-start gap-4">
-                  <Icon className="w-8 h-8 text-amber-400 flex-shrink-0" />
-                  <div>
-                    <h3 className="font-semibold text-white mb-2">
-                      {credential.title}
-                    </h3>
-                    <p className="text-slate-300 text-sm">
-                      {credential.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Certifications Section */}
-        <div className="mt-16 pt-16 border-t border-white/20">
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Left - License Info */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold font-display text-white">
-                Official Licenses & Certifications
-              </h3>
-              <div className="space-y-4">
-                <div className="p-4 bg-white/10 rounded-lg border border-white/20">
-                  <p className="text-amber-400 font-semibold mb-1">
-                    Amporn Tour Chiang Mai
-                  </p>
-                  <p className="text-slate-300 text-sm">
-                    Tourism License: <span className="font-mono">22/00688</span>
-                  </p>
-                  <p className="text-slate-300 text-sm">
-                    Location: T2B Hostel, 146/5 Ratchiangsaen Road
-                  </p>
-                </div>
-                <div className="p-4 bg-white/10 rounded-lg border border-white/20">
-                  <p className="text-amber-400 font-semibold mb-1">
-                    Leisure Hub Travel
-                  </p>
-                  <p className="text-slate-300 text-sm">
-                    Tourism License: <span className="font-mono">22/00648</span>
-                  </p>
-                  <p className="text-slate-300 text-sm">
-                    Location: 71/6 Sridonchai Road, Changklan
-                  </p>
-                </div>
-              </div>
+                <MessageCircle className="h-5 w-5" aria-hidden="true" />
+                Ask availability on WhatsApp
+              </a>
+              <a
+                href="https://maps.app.goo.gl/2wbPCLXRqcieFkeFA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-white/20 px-5 py-3 font-semibold text-white transition-colors hover:bg-white/10"
+              >
+                <MapPin className="h-5 w-5" aria-hidden="true" />
+                View office on Google Maps
+              </a>
             </div>
+            <p className="mt-4 flex items-center gap-2 text-sm text-slate-400">
+              <Clock className="h-4 w-4" aria-hidden="true" />
+              Send date and group size first. Final price is confirmed before booking.
+            </p>
+          </div>
 
-            {/* Right - Trust Stats */}
-            <div className="space-y-6">
-              <h3 className="text-2xl font-bold font-display text-white">
-                By The Numbers
-              </h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="p-4 bg-white/10 rounded-lg border border-white/20 text-center">
-                  <p className="text-3xl font-bold text-amber-400 mb-2">10+</p>
-                  <p className="text-slate-300 text-sm">Years in Business</p>
-                </div>
-                <div className="p-4 bg-white/10 rounded-lg border border-white/20 text-center">
-                  <p className="text-3xl font-bold text-amber-400 mb-2">1000+</p>
-                  <p className="text-slate-300 text-sm">Happy Customers</p>
-                </div>
-                <div className="p-4 bg-white/10 rounded-lg border border-white/20 text-center">
-                  <p className="text-3xl font-bold text-amber-400 mb-2">50+</p>
-                  <p className="text-slate-300 text-sm">Countries Served</p>
-                </div>
-                <div className="p-4 bg-white/10 rounded-lg border border-white/20 text-center">
-                  <p className="text-3xl font-bold text-amber-400 mb-2">100%</p>
-                  <p className="text-slate-300 text-sm">Satisfaction Rate</p>
-                </div>
-              </div>
-            </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {trustItems.map((item) => {
+              const Icon = item.icon;
+              return (
+                <article key={item.title} className="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
+                  <Icon className="mb-4 h-7 w-7 text-amber-300" aria-hidden="true" />
+                  <h3 className="mb-2 font-semibold text-white">{item.title}</h3>
+                  <p className="text-sm leading-relaxed text-slate-300">{item.description}</p>
+                </article>
+              );
+            })}
           </div>
         </div>
       </div>

@@ -3,9 +3,10 @@ import HeroSection from "@/components/HeroSection";
 import ToursSection from "@/components/ToursSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
-
+import TrustSignals from "@/components/TrustSignals";
+import BookingFlow from "@/components/BookingFlow";
+import GallerySection from "@/components/GallerySection";
 import OfficeSection from "@/components/OfficeSection";
-
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -29,10 +30,12 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <TrustSignals />
         <ToursSection />
+        <BookingFlow />
         <TestimonialsSection />
+        <GallerySection />
         <AboutSection />
-
         <OfficeSection />
         <ContactSection />
       </main>

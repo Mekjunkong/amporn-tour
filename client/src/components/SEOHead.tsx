@@ -7,6 +7,7 @@ import {
   addJsonLdScript,
   updateSEOMeta,
   defaultSEO,
+  SITE_URL,
 } from '@/lib/seo';
 
 /**
@@ -32,7 +33,7 @@ export default function SEOHead() {
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', 'https://amporn-tour.manus.space');
+    canonical.setAttribute('href', SITE_URL);
 
     // Add robots meta
     let robots = document.querySelector('meta[name="robots"]');
@@ -45,10 +46,10 @@ export default function SEOHead() {
 
     // Add language alternates
     const languages = [
-      { hrefLang: 'en', href: 'https://amporn-tour.manus.space' },
-      { hrefLang: 'th', href: 'https://amporn-tour.manus.space?lang=th' },
-      { hrefLang: 'he', href: 'https://amporn-tour.manus.space?lang=he' },
-      { hrefLang: 'x-default', href: 'https://amporn-tour.manus.space' },
+      { hrefLang: 'en', href: SITE_URL },
+      { hrefLang: 'th', href: `${SITE_URL}?lang=th` },
+      { hrefLang: 'he', href: `${SITE_URL}?lang=he` },
+      { hrefLang: 'x-default', href: SITE_URL },
     ];
 
     languages.forEach(lang => {

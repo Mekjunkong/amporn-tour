@@ -1,135 +1,138 @@
 import { useLanguage } from '@/contexts/LanguageContext';
 import { translations } from '@/lib/translations';
 import { Button } from '@/components/ui/button';
-import { MessageCircle, Phone, Mail } from 'lucide-react';
-import { useState } from 'react';
-import { toast } from 'sonner';
+import { Clock, MessageCircle, Phone } from 'lucide-react';
+import { useMemo } from 'react';
+import type { FormEvent } from 'react';
 
 const WHATSAPP_NUMBER = '66899995677';
 
 export default function ContactSection() {
   const { language } = useLanguage();
   const t = translations[language];
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [isLoading, setIsLoading] = useState(false);
 
-  const getWhatsAppMessage = () => {
-    return encodeURIComponent(t.whatsapp.message);
-  };
+  const whatsappUrl = useMemo(() => {
+    return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.whatsapp.message)}`;
+  }, [t.whatsapp.message]);
 
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${getWhatsAppMessage()}`;
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsLoading(true);
+    const fields = new FormData(e.currentTarget);
+    const name = String(fields.get('name') || '').trim();
+    const email = String(fields.get('email') || '').trim();
+    const inquiry = String(fields.get('message') || '').trim();
 
-    try {
-      // Simulate form submission (in production, this would send to a backend)
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      toast.success(t.contact.form.success);
-      setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      toast.error(t.contact.form.error);
-    } finally {
-      setIsLoading(false);
-    }
+    const message = [
+      'Hello Amporn Tour, I would like to check availability and price.',
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Message: ${inquiry}`,
+    ].join('\n');
+
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24 bg-slate-50">
+    <section id="contact" className="bg-slate-50 py-16 md:py-24" aria-labelledby="contact-heading">
       <div className="container">
-        {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display text-slate-900">
-            {t.contact.title}
+        <div className="mb-12 text-center md:mb-16">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Fastest contact</p>
+          <h2 id="contact-heading" className="mb-4 text-3xl font-bold text-slate-900 md:text-4xl font-display">
+            Ask availability on WhatsApp
           </h2>
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-600">
+            Send your travel date, group size, hotel area, and preferred tour. Amporn Tour will confirm the price and inclusions before booking.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Info */}
-          <div className="space-y-8">
-            {/* WhatsApp */}
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <div className="flex items-start gap-4 p-6 bg-white rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
-                <MessageCircle className="w-8 h-8 text-green-500 flex-shrink-0 mt-1" />
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="space-y-5">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="block rounded-2xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg">
+              <div className="flex items-start gap-4">
+                <MessageCircle className="mt-1 h-8 w-8 flex-shrink-0 text-green-500" aria-hidden="true" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">{t.contact.whatsapp}</h3>
+                  <h3 className="mb-1 text-lg font-semibold">WhatsApp</h3>
                   <p className="text-slate-600">{t.footer.phone}</p>
-                  <p className="text-sm text-primary mt-2">Click to message</p>
+                  <p className="mt-2 text-sm font-medium text-primary">Ask availability, price, and pickup details</p>
                 </div>
               </div>
             </a>
 
-            {/* Phone */}
-            <a href={`tel:+${WHATSAPP_NUMBER}`}>
-              <div className="flex items-start gap-4 p-6 bg-white rounded-lg border border-slate-200 hover:shadow-lg transition-shadow">
-                <Phone className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
+            <a href={`tel:+${WHATSAPP_NUMBER}`} className="block rounded-2xl border border-slate-200 bg-white p-6 transition-shadow hover:shadow-lg">
+              <div className="flex items-start gap-4">
+                <Phone className="mt-1 h-8 w-8 flex-shrink-0 text-primary" aria-hidden="true" />
                 <div>
-                  <h3 className="font-semibold text-lg mb-1">{t.contact.phone}</h3>
+                  <h3 className="mb-1 text-lg font-semibold">Phone</h3>
                   <p className="text-slate-600">{t.footer.phone}</p>
-                  <p className="text-sm text-primary mt-2">Click to call</p>
+                  <p className="mt-2 text-sm font-medium text-primary">Tap to call from mobile</p>
                 </div>
               </div>
             </a>
 
-            {/* Hours */}
-            <div className="flex items-start gap-4 p-6 bg-white rounded-lg border border-slate-200">
-              <Mail className="w-8 h-8 text-primary flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="font-semibold text-lg mb-1">{t.contact.hours}</h3>
-                <p className="text-slate-600">{t.contact.hoursText}</p>
+            <div className="rounded-2xl border border-slate-200 bg-white p-6">
+              <div className="flex items-start gap-4">
+                <Clock className="mt-1 h-8 w-8 flex-shrink-0 text-primary" aria-hidden="true" />
+                <div>
+                  <h3 className="mb-1 text-lg font-semibold">Response time</h3>
+                  <p className="text-slate-600">Please contact us for availability. WhatsApp is the fastest channel during Thai daytime.</p>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-white p-8 rounded-lg border border-slate-200">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 md:p-8">
+            <h3 className="mb-2 text-2xl font-bold text-slate-900 font-display">Draft your WhatsApp message</h3>
+            <p className="mb-6 text-sm leading-relaxed text-slate-600">
+              This form opens WhatsApp with your message. It does not silently submit or store your information.
+            </p>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="contact-name" className="mb-2 block text-sm font-medium text-slate-700">
                   {t.contact.form.name}
                 </label>
                 <input
+                  id="contact-name"
+                  name="name"
                   type="text"
-                  value={formData.name}
-                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  autoComplete="name"
+                  placeholder="Your name"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="contact-email" className="mb-2 block text-sm font-medium text-slate-700">
                   {t.contact.form.email}
                 </label>
                 <input
+                  id="contact-email"
+                  name="email"
                   type="email"
-                  value={formData.email}
-                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  autoComplete="email"
+                  placeholder="you@example.com"
+                  className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-slate-700 mb-2">
+                <label htmlFor="contact-message" className="mb-2 block text-sm font-medium text-slate-700">
                   {t.contact.form.message}
                 </label>
                 <textarea
-                  value={formData.message}
-                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                  rows={4}
-                  className="w-full px-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  id="contact-message"
+                  name="message"
+                  placeholder="Travel date, group size, hotel area, preferred tour"
+                  rows={5}
+                  className="w-full rounded-lg border border-slate-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
 
-              <Button
-                type="submit"
-                disabled={isLoading}
-                className="w-full bg-primary hover:bg-primary/90"
-              >
-                {isLoading ? 'Sending...' : t.contact.form.send}
+              <Button type="submit" className="w-full bg-green-500 hover:bg-green-600">
+                <MessageCircle className="mr-2 h-5 w-5" aria-hidden="true" />
+                Send via WhatsApp
               </Button>
             </form>
           </div>

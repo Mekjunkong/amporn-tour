@@ -15,10 +15,10 @@ export const translations: any = {
     },
     // Hero Section
     hero: {
-      headline: 'Discover Northern Thailand with Amporn Tour',
-      subheadline: 'Professional private tours in Chiang Mai for international travelers',
+      headline: 'Private Chiang Mai Tours with Licensed Local Guides',
+      subheadline: 'Temples, mountains, waterfalls, trekking routes, and custom day trips with clear prices before you book',
       cta: 'Start Your Journey',
-      whatsapp: 'Message on WhatsApp',
+      whatsapp: 'Ask availability on WhatsApp',
     },
     // Tours Section
     tours: {
@@ -62,7 +62,7 @@ export const translations: any = {
     },
     // WhatsApp Messages
     whatsapp: {
-      message: 'Hello, I found Amporn Tour through your website and would like to ask about tours in Chiang Mai.',
+      message: 'Hello Amporn Tour, I would like to check availability and price for a Chiang Mai private tour. My travel date is:',
     },
   },
 };

@@ -28,6 +28,7 @@ export interface Tour {
   seasonalNote?: string;
   paymentTerms?: string;
   cancellationPolicy?: string;
+  notes?: string;
 }
 
 export const tours: Tour[] = [
@@ -36,10 +37,10 @@ export const tours: Tour[] = [
     title: 'Chiang Rai One Day & Golden Triangle',
     description: 'Explore Chiang Rai\'s most iconic temples including the stunning White Temple and Blue Temple. Visit the famous Golden Triangle where Thailand, Laos, and Myanmar meet. Experience hot springs, local culture, and boat trips along the Mae Khong River.',
     shortDescription: 'Explore Chiang Rai temples and the Golden Triangle border region',
-    heroImage: '/images/generated-white-temple-1.webp',
+    heroImage: '/images/tour-chiang-rai-golden-gallery-1.webp',
     images: [
-      { src: '/images/generated-white-temple-1.webp', alt: 'Wat Rong Khun White Temple with ornate architecture' },
-      { src: '/images/generated-white-temple-2.webp', alt: 'White Temple intricate details and mirror mosaics' },
+      { src: '/images/tour-chiang-rai-golden-gallery-1.webp', alt: 'Wat Rong Khun White Temple with ornate architecture' },
+      { src: '/images/tour-chiang-rai-golden-gallery-1.jpg', alt: 'White Temple intricate details and mirror mosaics' },
       { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
       { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
       { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
@@ -139,8 +140,8 @@ export const tours: Tour[] = [
     shortDescription: 'Full day exploration of Chiang Rai\'s temples and cultural attractions',
     heroImage: '/images/tour-chiang-rai-one-day-banner.jpg',
     images: [
-      { src: '/images/generated-white-temple-1.webp', alt: 'Wat Rong Khun White Temple with ornate architecture' },
-      { src: '/images/generated-white-temple-2.webp', alt: 'White Temple intricate details and mirror mosaics' },
+      { src: '/images/tour-chiang-rai-golden-gallery-1.webp', alt: 'Wat Rong Khun White Temple with ornate architecture' },
+      { src: '/images/tour-chiang-rai-golden-gallery-1.jpg', alt: 'White Temple intricate details and mirror mosaics' },
       { src: '/images/real-chiang-rai-blue-temple-interior.jpg', alt: 'Blue Temple stunning interior with Buddha' },
       { src: '/images/real-chiang-rai-blue-temple-exterior.jpg', alt: 'Customer at Blue Temple with elephant statues' },
       { src: '/images/real-chiang-rai-black-house-group.jpg', alt: 'Tour group at Black House Museum' },
@@ -364,7 +365,7 @@ export const tours: Tour[] = [
     shortDescription: 'Visit iconic Doi Suthep temple and explore authentic Hmong mountain villages',
     heroImage: '/images/tour-doi-suthep-banner.jpg',
     images: [
-      { src: '/images/generated-doi-suthep-1.webp', alt: 'Doi Suthep Temple golden pagoda at sunset with city views' },
+      { src: '/images/doi-suthep-naga-staircase-real.webp', alt: 'Doi Suthep Temple golden pagoda at sunset with city views' },
       { src: '/images/doi-suthep-naga-staircase.webp', alt: 'Tourists climbing the 306-step Naga staircase to Doi Suthep Temple' },
     ],
     activities: [

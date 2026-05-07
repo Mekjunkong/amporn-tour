@@ -1,10 +1,17 @@
 import { tours } from '@/lib/tours-data';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'wouter';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
-
+const tourFitLabels: Record<string, string> = {
+  'chiang-rai-one-day-golden-triangle': 'Best for border history and classic Chiang Rai sights',
+  'chiang-rai-lalita-cafe': 'Best for temple photos and cafe gardens',
+  'chiang-rai-one-day': 'Best for first-time Chiang Rai visitors',
+  'doi-inthanon-national-park': 'Best for mountain views and waterfalls',
+  'doi-inthanon-trek-pha-dok-siew': 'Best for waterfall trekking',
+  'doi-inthanon-trek-kew-mae-pan': 'Best for scenic nature trail views',
+};
 
 export default function ToursSection() {
   const { ref: sectionRef, isVisible: sectionVisible } = useScrollAnimation();
@@ -13,74 +20,76 @@ export default function ToursSection() {
     <section
       ref={sectionRef}
       id="tours"
-      className={`py-16 md:py-24 bg-slate-50 transition-all duration-1000 ${
+      className={`bg-slate-50 py-16 transition-all duration-1000 md:py-24 ${
         sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
       }`}
+      aria-labelledby="featured-tours-heading"
     >
       <div className="container">
-        {/* Section Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-display text-slate-900">
+        <div className="mb-12 text-center md:mb-16">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-primary">Popular private tours</p>
+          <h2 id="featured-tours-heading" className="mb-4 text-3xl font-bold text-slate-900 md:text-4xl font-display">
             Featured Tours
           </h2>
-          <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            Explore our carefully curated tour packages designed for unforgettable experiences in Northern Thailand
+          <p className="mx-auto max-w-2xl text-lg leading-relaxed text-slate-600">
+            Compare the most requested routes by style, duration, and starting price. Message on WhatsApp for the final private quote by group size.
           </p>
         </div>
 
-        {/* Featured Tours Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {tours.slice(0, 6).map((tour, index) => (
-            <Link key={tour.id} href={`/tour/${tour.id}`}>
-              <a className="block h-full">
-                <Card
-                  className={`hover:shadow-lg transition-all duration-300 border-slate-200 h-full hover:border-primary cursor-pointer overflow-hidden ${
-                    sectionVisible
-                      ? 'opacity-100 translate-y-0'
-                      : 'opacity-0 translate-y-10'
-                  }`}
-                  style={{
-                    transitionDelay: sectionVisible ? `${index * 80}ms` : '0ms',
-                  }}
-                >
-                  {/* Tour Image */}
-                  <div className="w-full h-48 overflow-hidden bg-slate-200">
-                    <img
-                      src={tour.heroImage}
-                      alt={tour.title}
-                      loading="lazy"
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                  <CardHeader>
-                    <CardTitle className="text-xl text-slate-900">{tour.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <CardDescription className="text-base text-slate-600 mb-4">
-                      {tour.shortDescription}
-                    </CardDescription>
-                    <div className="flex items-center justify-between text-sm">
-                      <span className="text-primary font-semibold">
-                        {tour.pricePerPerson.toLocaleString()} {tour.currency}
+            <Link
+              key={tour.id}
+              href={`/tour/${tour.id}`}
+              className={`group block h-full rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 ${
+                sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
+              style={{ transitionDelay: sectionVisible ? `${index * 80}ms` : '0ms' }}
+            >
+              <Card className="h-full cursor-pointer overflow-hidden border-slate-200 transition-all duration-300 group-hover:border-primary group-hover:shadow-lg">
+                <div className="h-48 w-full overflow-hidden bg-slate-200">
+                  <img
+                    src={tour.heroImage}
+                    alt={tour.images[0]?.alt || tour.title}
+                    loading="lazy"
+                    className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </div>
+                <CardHeader>
+                  <p className="mb-2 inline-flex w-fit items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                    {tourFitLabels[tour.id] || 'Customizable private tour'}
+                  </p>
+                  <CardTitle className="text-xl text-slate-900">{tour.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <CardDescription className="mb-4 text-base leading-relaxed text-slate-600">
+                    {tour.shortDescription}
+                  </CardDescription>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex items-center justify-between gap-4">
+                      <span className="font-semibold text-primary">
+                        From {tour.pricePerPerson.toLocaleString()} {tour.currency} / person
                       </span>
                       <span className="text-slate-500">{tour.duration}</span>
                     </div>
-                  </CardContent>
-                </Card>
-              </a>
+                    <p className="flex gap-2 text-xs leading-relaxed text-slate-500">
+                      <CheckCircle2 className="mt-0.5 h-4 w-4 flex-shrink-0 text-primary" aria-hidden="true" />
+                      Final private price, pickup, tickets, lunch, and exclusions are confirmed before booking.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
             </Link>
           ))}
         </div>
 
-
-
-        {/* View All Tours CTA */}
         <div className="text-center">
-          <Link href="/tours">
-            <a className="inline-flex items-center gap-2 px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg font-semibold transition-colors">
-              <span>View All Tours & Details</span>
-              <ArrowRight className="w-4 h-4" />
-            </a>
+          <Link
+            href="/tours"
+            className="inline-flex items-center gap-2 rounded-lg bg-primary px-8 py-3 font-semibold text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          >
+            <span>View All Tours & Details</span>
+            <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>
       </div>
